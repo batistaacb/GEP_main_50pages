@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 24: THE SMART SCALE ROADMAP
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How will eBezout handle products sold by weight?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                We plan to add a smart scale that can identify produce, read its weight, and turn that information into a QR Code for the customer's cart.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Smart Scale Roadmap}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            scalebox/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=2.8cm,
+                minimum height=1.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\footnotesize,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[scalebox, fill=GreenCard, draw=PrimaryGreen] (s1) {
+                \textcolor{PrimaryGreen}{\textbf{1. Place Produce}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Customer places}
+                \\[0.05cm]
+                \textcolor{BodyText}{produce on}
+                \\[0.05cm]
+                \textcolor{BodyText}{Bluetooth scale}
+            };
+            
+            \node[scalebox, right=0.15cm of s1, fill=BlueCard, draw=PrimaryBlue] (s2) {
+                \textcolor{PrimaryBlue}{\textbf{2. AI Identifies}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Scale uses AI/}
+                \\[0.05cm]
+                \textcolor{BodyText}{computer vision}
+                \\[0.05cm]
+                \textcolor{BodyText}{to identify item}
+            };
+            
+            \node[scalebox, right=0.15cm of s2, fill=GoldCard, draw=PrimaryGold] (s3) {
+                \textcolor{PrimaryGold}{\textbf{3. Generate QR}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Scale generates}
+                \\[0.05cm]
+                \textcolor{BodyText}{a unique}
+                \\[0.05cm]
+                \textcolor{BodyText}{QR Code}
+            };
+            
+            \node[scalebox, right=0.15cm of s3, fill=PrimaryBlue!10, draw=PrimaryBlue] (s4) {
+                \textcolor{PrimaryBlue}{\textbf{4. Add to Cart}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Customer scans}
+                \\[0.05cm]
+                \textcolor{BodyText}{QR Code to add}
+                \\[0.05cm]
+                \textcolor{BodyText}{to digital cart}
+            };
+            
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGold}{Future Roadmap — Not part of current MVP}
+                \\[0.05cm]
+                \textcolor{BodyText}{Represents our vision for a fully connected shopping environment}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 14: BUSINESS MODEL
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How does eBezout grow its revenue over time?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We start with recurring revenue from the retail platform, then add value-based services as more retailers and customers use it, and eventually expand into new opportunities around food intelligence.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{A Multi-Stage Revenue Model}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            phase/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=3.4cm,
+                minimum height=3.4cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[phase, fill=BlueCard, draw=PrimaryBlue] (p1) {
+                \textcolor{PrimaryBlue}{\large\bfseries Phase 1}
+                \\[0.05cm]
+                \textcolor{PrimaryBlue}{\bfseries MVP with PoC}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{SaaS Platform}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Subscription}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Transaction}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Fees}
+            };
+            
+            \node[phase, right=0.12cm of p1, fill=GreenCard, draw=PrimaryGreen] (p2) {
+                \textcolor{PrimaryGreen}{\large\bfseries Phase 2}
+                \\[0.05cm]
+                \textcolor{PrimaryGreen}{\bfseries Scale}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{AI Cross-Selling}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Commissions}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Personalized}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Promotions}
+            };
+            
+            \node[phase, right=0.12cm of p2, fill=GoldCard, draw=PrimaryGold] (p3) {
+                \textcolor{PrimaryGold}{\large\bfseries Phase 3}
+                \\[0.05cm]
+                \textcolor{PrimaryGold}{\bfseries Future}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{FinTech}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Credit}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Prepaid Perishables}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Food Intelligence}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{Starting with a simple, repeatable commercial model}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

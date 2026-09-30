@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 37: ADDITIONAL COMPETITIVE ANALYSIS
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What makes eBezout different from existing retail solutions?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                We focus on physical retail with very little friction, using the customer's existing smartphone and messaging apps while capturing what happens before the purchase.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Competitive Feature Comparison}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue!30, rounded corners=4pt, 
+                  minimum width=12cm, minimum height=5.0cm, 
+                  align=left, fill=white, line width=0.8pt, 
+                  inner sep=6pt, font=\tiny] {
+                \begin{tabular}{p{3.0cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
+                    \rowcolor{PrimaryBlue!10}
+                    \textbf{Feature} & \textbf{eBezout AI} & \textbf{Retail PoS} & \textbf{Retailer Apps} & \textbf{Delivery Apps} \\
+                    \hline
+                    No App Required & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{gray}{---} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} \\
+                    No epapers required & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGreen}{$\checkmark$} \\
+                    Messaging Interface & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    Captures Intent & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} \\
+                    Retail Intelligence & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    Product as Channel & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$}\\
+                    AI Conversations & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    In-Store Focus & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryRed}{$\times$} \\
+                    Low Friction & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    Solve tag-price problem & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} \\
+                    Phydigital Dynamic Price & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} \\
+                    CSA as a goal & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryRed}{$\times$} \\
+                    Affordable for all & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    High Churn Rate & \textcolor{PrimaryRed}{$\times$} & \textcolor{gray}{---} & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryGold}{$\sim$} \\
+                    Push Notifications oriented & \textcolor{PrimaryRed}{$\times$} & \textcolor{gray}{---} & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryGreen}{$\checkmark$} \\
+                    High Implementation Costs & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGold}{$\sim$} & \textcolor{PrimaryGreen}{$\checkmark$} & \textcolor{PrimaryRed}{$\times$} \\
+                    High service fee & \textcolor{PrimaryRed}{$\times$} & \textcolor{gray}{---} & \textcolor{PrimaryRed}{$\times$} & \textcolor{PrimaryGreen}{$\checkmark$} \\
+                \end{tabular}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=12.0cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{$\checkmark$ = Supported} \hspace{0.4cm}
+                \textcolor{PrimaryGold}{$\sim$ = Partial Support} \hspace{0.4cm}
+                \textcolor{PrimaryRed}{$\times$ = Not Supported} \hspace{0.4cm}
+                \textcolor{gray}{--- = Does not apply}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

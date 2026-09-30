@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 16: MARKET OPPORTUNITY
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (2.8cm);
+        \fill[PrimaryGreenLighter, opacity=0.05] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How big is the market we are entering?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Physical retail is a huge market across the countries we target, and the same technology can be used in many types of stores.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{A Trillion-Dollar Opportunity}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.2cm,
+            country/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=3.0cm,
+                minimum height=3.2cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                inner sep=4pt,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            source/.style={
+                font=\tiny,
+                text=LightText
+            }
+        ]
+            \node[country, fill=GreenCard, draw=PrimaryGreen] (br) {
+                \textcolor{PrimaryGreen}{\large\bfseries Brazil}
+                \\[0.05cm]
+                {\normalsize\bfseries\textcolor{PrimaryBlue}{11.6\%}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\small of the GDP}
+                \\[0.05cm]
+                \source{Retail \& Wholesale Trade}
+                \\[0.05cm]
+                \source{IBGE - National Accounts}
+            };
+            
+            \node[country, right=0.2cm of br, fill=BlueCard, draw=PrimaryBlue] (uae) {
+                \textcolor{PrimaryBlue}{\large\bfseries UAE}
+                \\[0.05cm]
+                {\normalsize\bfseries\textcolor{PrimaryBlue}{12.0\%}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\small of the GDP}
+                \\[0.05cm]
+                \source{Wholesale \& Retail Trade}
+                \\[0.05cm]
+                \source{Ministry of Economy}
+            };
+            
+            \node[country, right=0.2cm of uae, fill=GoldCard, draw=PrimaryGold] (us) {
+                \textcolor{PrimaryGold}{\large\bfseries USA}
+                \\[0.05cm]
+                {\normalsize\bfseries\textcolor{PrimaryBlue}{6.3\%}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\small of the GDP}
+                \\[0.05cm]
+                \source{Retail Trade Value Added}
+                \\[0.05cm]
+                \source{Federal Reserve (FRED)}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.0cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\footnotesize] {
+                \textcolor{PrimaryBlue}{From supermarkets to pharmacies, convenience stores,}
+                \\[0.05cm]
+                \textcolor{BodyText}{specialty retail and beyond —}
+                \textcolor{PrimaryGreen}{the same infrastructure scales across every retail environment.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

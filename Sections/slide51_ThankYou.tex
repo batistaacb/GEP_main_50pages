@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 40: THANK YOU / CONTACT
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.north west) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=-1cm,yshift=-2cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What are we looking for now?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                The right people and partners to help us turn our retail solution into a larger Food Intelligence business.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.5cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Thank You!}}
+        
+        \vspace{0.15cm}
+        \begin{tikzpicture}
+            \draw[PrimaryGold, line width=1.5pt, opacity=0.5] (0,0) -- (1.8cm,0);
+            \node[circle, fill=PrimaryGold, minimum size=4pt, inner sep=0pt] at (1.8cm,0) {};
+            \draw[PrimaryGold, line width=1.5pt, opacity=0.5] (1.8cm,0) -- (3.6cm,0);
+            \node[circle, fill=PrimaryGold, minimum size=4pt, inner sep=0pt] at (3.6cm,0) {};
+        \end{tikzpicture}
+        
+        \vspace{0.15cm}
+        {\LARGE\bfseries\textcolor{PrimaryBlue}{Building the AI Commerce Infrastructure}}
+        
+        \vspace{0.05cm}
+        {\Large\textcolor{BodyText}{for the Future of Food}}
+        
+        \vspace{0.2cm}
+        \begin{tikzpicture}
+            \node[
+                draw=PrimaryBlue,
+                fill=BlueCard,
+                rounded corners=8pt,
+                minimum width=10.5cm,
+                minimum height=1.6cm,
+                align=center,
+                line width=1.5pt
+            ]{
+                \Large\textcolor{PrimaryBlue}{Let's Build the Future Together}
+                \\[0.08cm]
+                \normalsize\textcolor{BodyText}{
+                    We aim to transform everyday retail
+                }
+                \\
+                \normalsize\textcolor{BodyText}{
+                    into a smarter, more connected food ecosystem.
+                }
+            };
+        \end{tikzpicture}
+        
+        \vspace{0.15cm}
+        \begin{center}
+            \begin{minipage}{0.85\textwidth}
+                \centering
+                \begin{tikzpicture}[
+                    node distance=0.06cm,
+                    cont/.style={draw=PrimaryBlue!20, rounded corners=4pt, 
+                                 minimum width=3.2cm, minimum height=0.5cm, 
+                                 align=center, fill=white, line width=0.5pt, 
+                                 font=\footnotesize}
+                ]
+                    % First row
+                    \node[cont] (c1) {\textbf{Adilson} --- Founder \& CEO};
+                    \node[cont, right=0.06cm of c1] (c2) {adilsoncbatista@gmail.com};
+                    \node[cont, right=0.06cm of c2] (c3) {+55 12 996 256 365};
+                    
+                    % Second row
+                    \node[cont, below=0.06cm of c1] (c4) {www.ebezout.com.br};
+                    \node[cont, below=0.06cm of c2] (c5) {@acbatista100p};
+                    \node[cont, below=0.06cm of c3] (c6) {Ventures Pitch};
+                \end{tikzpicture}
+            \end{minipage}
+        \end{center}
+    
+        \vspace{-0.25cm}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold, fill=GoldCard, rounded corners=6pt, inner sep=4pt, line width=1pt] {
+                \textcolor{PrimaryGold}{Let's Build the Future of Phygital Commerce Together}
+            };
+        \end{tikzpicture}
+        
+        \vspace{0.05cm}
+    \end{center}
+\end{frame}

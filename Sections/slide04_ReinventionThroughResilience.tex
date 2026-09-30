@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F3: Reinvention Through Resilience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryRedLighter, opacity=0.1] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4.5cm);
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What do you do when life changes your plans?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                You adapt, learn from what happened, and find a new way forward.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Reinvention Through Resilience}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.10cm,
+            event/.style={
+                draw=PrimaryRed!30,
+                rounded corners=4pt,
+                minimum width=4.8cm,
+                minimum height=0.5cm,
+                align=left,
+                fill=white,
+                line width=0.8pt,
+                font=\tiny,
+                inner sep=3pt
+            },
+            eventred/.style={
+                draw=PrimaryRed,
+                rounded corners=4pt,
+                minimum width=4.8cm,
+                minimum height=0.5cm,
+                align=left,
+                fill=RedCard,
+                line width=1pt,
+                font=\tiny\bfseries,
+                inner sep=3pt
+            },
+            eventgreen/.style={
+                draw=PrimaryGreen,
+                rounded corners=4pt,
+                minimum width=4.8cm,
+                minimum height=0.5cm,
+                align=left,
+                fill=GreenCard,
+                line width=1pt,
+                font=\tiny\bfseries,
+                inner sep=3pt
+            }
+        ]
+            % Column 1: Disruptions
+            \node[eventred] (d1) at (-2.6,1.4) {
+                \textcolor{PrimaryRed}{\textbf{Disruption:}} \textcolor{BodyText}{Brazil's economic and political crisis}
+            };
+            \node[event, below=0.10cm of d1] (r1) {
+                \textcolor{PrimaryRed}{$\rightarrow$} \textcolor{BodyText}{Difficult start in engineering career}
+            };
+            
+            \node[eventred, below=0.10cm of r1] (d2) {
+                \textcolor{PrimaryRed}{\textbf{Disruption:}} \textcolor{BodyText}{Father's cancer diagnosis}
+            };
+            \node[event, below=0.10cm of d2] (r2) {
+                \textcolor{PrimaryRed}{$\rightarrow$} \textcolor{BodyText}{Personal and professional pressure}
+            };
+            
+            \node[eventred, below=0.10cm of r2] (d3) {
+                \textcolor{PrimaryRed}{\textbf{Disruption:}} \textcolor{BodyText}{COVID-19 pandemic}
+            };
+            \node[event, below=0.10cm of d3] (r3) {
+                \textcolor{PrimaryRed}{$\rightarrow$} \textcolor{BodyText}{Loss of Sales Engineering position}
+            };
+            
+            % Column 2: Rebuilding
+            \node[eventgreen] (b1) at (2.6,1.4) {
+                \textcolor{PrimaryGreen}{\textbf{Rebuilding:}} \textcolor{BodyText}{Embedded Systems Engineer}
+            };
+            \node[event, below=0.10cm of b1] (rb1) {
+                \textcolor{PrimaryGreen}{$\rightarrow$} \textcolor{BodyText}{Aerospace engineering and autonomous systems}
+            };
+            
+            \node[eventgreen, below=0.10cm of rb1] (b2) {
+                \textcolor{PrimaryGreen}{\textbf{Rebuilding:}} \textcolor{BodyText}{Professor \& Engineering Coordinator}
+            };
+            \node[event, below=0.10cm of b2] (rb2) {
+                \textcolor{PrimaryGreen}{$\rightarrow$} \textcolor{BodyText}{Teaching, leadership, curriculum development}
+            };
+            
+            \node[eventgreen, below=0.10cm of rb2] (b3) {
+                \textcolor{PrimaryGreen}{\textbf{Rebuilding:}} \textcolor{BodyText}{eBezout AI -- Founder \& CEO}
+            };
+            \node[event, below=0.10cm of b3] (rb3) {
+                \textcolor{PrimaryGreen}{$\rightarrow$} \textcolor{BodyText}{Full commitment to entrepreneurship}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryBlue}{Each disruption forced adaptation, learning, and rebuilding}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

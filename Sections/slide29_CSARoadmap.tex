@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 33: CSA / LOCAL FOOD NETWORK ROADMAP
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What happens when retail intelligence reaches the local food system?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Retailers can better understand demand, producers can plan with more confidence, and consumers can get closer to the food they buy.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Local Food Networks}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.10cm,
+            part/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=2.6cm,
+                minimum height=1.6cm,
+                align=center,
+                fill=white,
+                line width=1pt,
+                font=\footnotesize,
+                drop shadow={shadow xshift=0.5pt, shadow yshift=-0.5pt, fill=ShadowColor}
+            }
+        ]
+            % Center: Platform
+            \node[part, fill=BlueCard, draw=PrimaryBlue, minimum width=3.0cm, minimum height=1.0cm] (platform) {
+                \textcolor{PrimaryBlue}{\textbf{AI Platform}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Intelligence Hub}
+            };
+            
+            % Top: Consumers
+            \node[part, above=0.4cm of platform, fill=GreenCard, draw=PrimaryGreen] (cons) {
+                \textcolor{PrimaryGreen}{\textbf{Consumers}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Better choices}
+            };
+            
+            % Right: Retailers
+            \node[part, right=0.4cm of platform, fill=BlueCard, draw=PrimaryBlue] (ret) {
+                \textcolor{PrimaryBlue}{\textbf{Retailers}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Demand insights}
+            };
+            
+            % Bottom: Producers
+            \node[part, below=0.4cm of platform, fill=GoldCard, draw=PrimaryGold] (prod) {
+                \textcolor{PrimaryGold}{\textbf{Producers}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Plan production}
+            };
+            
+            % Left: CSA
+            \node[part, left=0.4cm of platform, fill=GreenCard, draw=PrimaryGreen] (csa) {
+                \textcolor{PrimaryGreen}{\textbf{CSA}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Community}
+            };
+            
+            % Arrows
+            \draw[arrow, line width=0.8pt] (cons.south) -- (platform.north);
+            \draw[arrow, line width=0.8pt] (platform.east) -- (ret.west);
+            \draw[arrow, line width=0.8pt] (platform.south) -- (prod.north);
+            \draw[arrow, line width=0.8pt] (csa.east) -- (platform.west);
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{The supermarket becomes the gateway to a smarter local food network}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

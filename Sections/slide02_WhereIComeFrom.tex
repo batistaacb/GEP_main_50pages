@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F1: Where I Come From
+%% Personal narrative opening for eBezout AI pitch
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Where does this journey begin?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                In a small agricultural region of Brazil, where I grew up close to food production and learned early that good results depend on care, patience, and making the most of limited resources.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Where I Come From}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{columns}[T]
+        \column{0.45\textwidth}
+        \begin{center}
+            \begin{tikzpicture}
+                \node[draw=PrimaryGreen!30, rounded corners=8pt, 
+                      minimum width=4.2cm, minimum height=4.8cm, 
+                      align=center, fill=white, line width=0.8pt, 
+                      inner sep=6pt] {
+                    \vspace{0.1cm}
+                    \textcolor{PrimaryGreen}{\large\bfseries Small-Town Brazil}\\
+                    \vspace{0.05cm}
+                    
+                    \textcolor{BodyText}{\footnotesize I grew up in a humble family}
+                    \\[0.05cm]
+
+                    \textcolor{BodyText}{\footnotesize  in a small agricultural region.}
+                    \\[0.05cm]
+                    
+                    \textcolor{BodyText}{\footnotesize We did not have privileged}
+                    \\[0.05cm]
+
+                    \textcolor{BodyText}{\footnotesize access to resources or networks.}
+                    \\[0.05cm]
+                    
+                    \textcolor{BodyText}{\footnotesize But I learned to understand }
+                    \\[0.05cm]
+
+                    \textcolor{BodyText}{\footnotesize the rhythm of the land}
+                    \\[0.05cm]
+
+                    \textcolor{BodyText}{\footnotesize and the value of hard work.}
+                };
+            \end{tikzpicture}
+        \end{center}
+
+        \column{0.50\textwidth}
+        \begin{center}
+            \begin{tikzpicture}[
+                node distance=0.12cm,
+                point/.style={
+                    draw=PrimaryGold!30,
+                    rounded corners=4pt,
+                    minimum width=5.0cm,
+                    minimum height=0.5cm,
+                    align=left,
+                    fill=white,
+                    line width=0.8pt,
+                    font=\footnotesize,
+                    inner sep=4pt
+                }
+            ]
+                \node[point, fill=GreenCard, draw=PrimaryGreen] (p1) {
+                    \textcolor{PrimaryGreen}{\textbf{$\bullet$}} \textcolor{BodyText}{Strawberry farming and food production}
+                };
+                \node[point, below=0.12cm of p1, fill=BlueCard, draw=PrimaryBlue] (p2) {
+                    \textcolor{PrimaryBlue}{\textbf{$\bullet$}} \textcolor{BodyText}{Direct experience with agricultural cycles}
+                };
+                \node[point, below=0.12cm of p2, fill=GoldCard, draw=PrimaryGold] (p3) {
+                    \textcolor{PrimaryGold}{\textbf{$\bullet$}} \textcolor{BodyText}{Understanding of uncertainty and variation}
+                };
+                \node[point, below=0.12cm of p3, fill=GreenCard, draw=PrimaryGreen] (p4) {
+                    \textcolor{PrimaryGreen}{\textbf{$\bullet$}} \textcolor{BodyText}{Resourcefulness — doing more with less}
+                };
+                \node[point, below=0.12cm of p4, fill=BlueCard, draw=PrimaryBlue] (p5) {
+                    \textcolor{PrimaryBlue}{\textbf{$\bullet$}} \textcolor{BodyText}{A real-world foundation for problem-solving}
+                };
+            \end{tikzpicture}
+            
+            \vspace{0.1cm}
+            \begin{tikzpicture}
+                \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                      minimum width=6.0cm, minimum height=0.5cm, 
+                      align=center, line width=1pt, font=\tiny] {
+                    \textcolor{PrimaryGreen}{\textbf{Foundation:}} \textcolor{BodyText}{The real world of food and farming}
+                };
+            \end{tikzpicture}
+        \end{center}
+    \end{columns}
+\end{frame}

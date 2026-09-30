@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 11: FOOD INTELLIGENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=0cm,yshift=-1cm]current page.center) circle (2.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Where can this intelligence take us beyond retail?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            If we can understand what people want to buy, we can help retailers plan better today—and eventually help producers plan what to grow.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Building Smarter Food Systems}}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            pillar/.style={
+                draw=PrimaryBlue!80,
+                rounded corners=6pt,
+                minimum width=3.2cm,
+                minimum height=3.6cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                inner sep=5pt,
+                font=\small,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[pillar, fill=GreenCard, draw=PrimaryGreen] (p1) {
+                \textcolor{PrimaryBlue}{\large\bfseries Today}\\[0.05cm]
+                \textcolor{PrimaryBlue}{\bfseries AI Commerce}\\
+                \vspace{0.1cm}
+                \begin{tabular}{c}
+                    \footnotesize Democratize Scan \& Go\\
+                    \footnotesize through AI Commerce\\
+                    \vspace{0.05cm}
+                    \footnotesize Consumers \& Retailers\\
+                    \footnotesize Connected by QR Codes
+                \end{tabular}
+            };
+            
+            \node[pillar, right=0.15cm of p1, fill=BlueCard, draw=PrimaryBlue] (p2) {
+                \textcolor{PrimaryBlue}{\large\bfseries Next}\\[0.05cm]
+                \textcolor{PrimaryBlue}{\bfseries Retail Intelligence}\\
+                \vspace{0.1cm}
+                \begin{tabular}{c}
+                    \footnotesize Demand Forecasting\\
+                    \footnotesize Inventory Optimization\\
+                    \vspace{0.05cm}
+                    \footnotesize Perishable Products\\
+                    \footnotesize Smart Offers
+                \end{tabular}
+            };
+            
+            \node[pillar, right=0.15cm of p2, fill=GoldCard, draw=PrimaryGold] (p3) {
+                \textcolor{PrimaryGold}{\large\bfseries Future}\\[0.05cm]
+                \textcolor{PrimaryGold}{\bfseries Food Intelligence}\\
+                \vspace{0.1cm}
+                \begin{tabular}{c}
+                    \footnotesize Connect consumers,\\
+                    \footnotesize retailers, producers\\
+                    \footnotesize and CSA communities\\
+                    \vspace{0.05cm}
+                    \footnotesize Food Intelligence Systems\\
+                    \footnotesize Food Security
+                \end{tabular}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, minimum width=10.5cm, minimum height=0.8cm, align=center, line width=1pt, font=\footnotesize] {
+                \textcolor{PrimaryBlue}{Every interaction contributes valuable demand intelligence that improves}
+                \\[0.05cm]
+                \textcolor{PrimaryBlue}{\textbf{retail decisions today} while enabling smarter}
+                \textbf{production planning, stronger local food networks}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, minimum width=10.5cm, minimum height=0.5cm, align=center, line width=1pt, font=\normalsize] {
+                \textcolor{PrimaryGreen}{Every interaction strengthens the intelligence}
+                \textcolor{BodyText}{ that connects consumers and retailers}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

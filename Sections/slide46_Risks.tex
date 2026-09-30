@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 42: RISKS & MITIGATIONS
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryRedLighter, opacity=0.1] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What could go wrong?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Adoption, retailer change, competition, and our lean team are real risks—but each can be addressed through simplicity, focus, and adaptation.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Risks \& Mitigations}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            riskbox/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=6pt,
+                minimum width=3.2cm,
+                minimum height=2.8cm,
+                align=left,
+                fill=white,
+                line width=1.2pt,
+                font=\normalsize,
+                text width=2.7cm,
+                inner sep=5pt
+            }
+        ]
+            % Column 1 (Market)
+            \node[riskbox, fill=BlueCard, draw=PrimaryBlue] (r1) at (-5.4, 0) {
+                \textcolor{PrimaryRed}{\textbullet} \textcolor{PrimaryRed}{\textbf{Adoption}} \\
+                \vspace{0.1cm}
+                \textcolor{PrimaryGreen}{\textbullet} \textcolor{PrimaryGreen}{\textbf{No app, low friction}}  
+            };
+            
+            % Column 2 (Retailer)
+            \node[riskbox, fill=BlueCard, draw=PrimaryBlue] (r2) at (-1.8, 0) {
+                \textcolor{PrimaryRed}{\textbullet} \textcolor{PrimaryRed}{\textbf{Retailer change}}\\
+                \vspace{0.1cm}
+                \textcolor{PrimaryGreen}{\textbullet} \textcolor{PrimaryGreen}{\textbf{QR Code simplicity}} 
+            };
+            
+            % Column 3 (Technical)
+            \node[riskbox, fill=BlueCard, draw=PrimaryBlue] (r3) at (1.8, 0) {
+                \textcolor{PrimaryRed}{\textbullet} \textcolor{PrimaryRed}{\textbf{Competition}}\\
+                \vspace{0.1cm}
+                \textcolor{PrimaryGreen}{\textbullet} \textcolor{PrimaryGreen}{\textbf{Intent data focus}} 
+            };
+            
+            % Column 4 (Structural)
+            \node[riskbox, fill=BlueCard, draw=PrimaryBlue] (r4) at (5.4, 0) {
+                \textcolor{PrimaryRed}{\textbullet} \textcolor{PrimaryRed}{\textbf{Solo founder}}\\
+                \vspace{0.1cm}
+                \textcolor{PrimaryGreen}{\textbullet} \textcolor{PrimaryGreen}{\textbf{Lean, agile strategy}}\\
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.2cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{We are building a business and we are aware of the risks}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

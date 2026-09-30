@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 8: RETAIL INTELLIGENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What do retailers gain from all these interactions?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            They turn everyday customer interactions into useful information that helps the store make better decisions.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.8cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Business Intelligence}}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[node distance=0.15cm,
+            box/.style={draw=PrimaryBlue!50, rounded corners=6pt, minimum width=2.7cm, minimum height=2.4cm, align=center, fill=white, line width=1.2pt, font=\small\bfseries}
+        ]
+            \node[box] (int) {Customer\\\footnotesize Interaction};
+            \node[box, right=0.15cm of int] (data) {Behavioral\\\footnotesize Data};
+            \node[box, right=0.15cm of data] (ins) {Retail\\\footnotesize Insights};
+            \node[box, right=0.15cm of ins] (dec) {Better\\\footnotesize Decisions};
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.08cm,
+            vbox/.style={
+                draw=PrimaryBlue!30, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=0.5cm, 
+                align=center, 
+                fill=white, 
+                line width=0.5pt, 
+                font=\footnotesize
+            },
+            vboxgold/.style={
+                draw=PrimaryGold!60, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=0.5cm, 
+                align=center, 
+                fill=GoldCard, 
+                line width=1.2pt, 
+                font=\footnotesize,
+                text=BodyText
+            },
+            vboxgreen/.style={
+                draw=PrimaryGreen!50, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=0.5cm, 
+                align=center, 
+                fill=GreenCard, 
+                line width=1.2pt, 
+                font=\footnotesize,
+                text=BodyText
+            }
+        ]
+            % Linha 1: Azul (dados e forecasting)
+            \node[vbox] (v1) {\textbf{Demand Forecasting}};
+            \node[vbox, right=0.08cm of v1] (v2) {\textbf{Inventory Optimization}};
+            \node[vbox, right=0.08cm of v2] (v3) {\textbf{Personalized Offers}};
+            
+            % Linha 2: Verde (insights e otimização)
+            \node[vboxgreen, below=0.08cm of v1] (v4) {\textbf{Smarter Merchandising}};
+            \node[vboxgreen, below=0.08cm of v2] (v5) {\textbf{Customer Insights}};
+            \node[vboxgreen, below=0.08cm of v3] (v6) {\textbf{Dynamic Pricing}};
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen, fill=GreenCard, rounded corners=6pt, minimum width=10.5cm, minimum height=0.6cm, align=center, line width=1.5pt, font=\small] {
+                \textcolor{PrimaryGreen}{Key Insight:} \textbf{Every interaction builds the future of retail}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

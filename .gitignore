@@ -1,0 +1,35 @@
+
+---
+
+## `.gitignore`
+
+```gitignore
+# LaTeX build artifacts
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

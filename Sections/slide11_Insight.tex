@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 4: THE INSIGHT — A NEW ARCHITECTURE
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=0cm,yshift=0cm]current page.center) circle (4.5cm);
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How can we digitize physical retail without adding more hardware?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            By connecting the smartphone, QR Code, messaging, and AI capabilities that customers already have.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{A New Architecture for Retail}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.3cm,
+            tech/.style={
+                draw=PrimaryBlue!50,
+                rounded corners=6pt,
+                minimum width=2.8cm,
+                minimum height=2.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[tech, fill=BlueCard, draw=PrimaryBlue] (cam) {
+                \textcolor{PrimaryBlue}{Smartphone Camera}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{The scanner}
+            };
+            
+            \node[tech, right=0.3cm of cam, fill=GreenCard, draw=PrimaryGreen] (qr) {
+                \textcolor{PrimaryGreen}{QR Code}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{The gateway}
+            };
+            
+            \node[tech, right=0.3cm of qr, fill=GoldCard, draw=PrimaryGold] (msg) {
+                \textcolor{PrimaryGold}{Messaging App}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{The interface}
+            };
+            
+            \node[tech, right=0.3cm of msg, fill=PrimaryBlue!10, draw=PrimaryBlue] (ai) {
+                \textcolor{PrimaryBlue}{Conversational AI}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{The intelligence}
+            };
+            
+            
+            \node[draw=PrimaryBlue, fill=PrimaryBlue!10, rounded corners=8pt, 
+                  minimum width=10.0cm, minimum height=0.8cm, align=center, 
+                  line width=2pt, font=\large\bfseries]
+                at ($(cam.south)!0.5!(ai.south) + (0,-1.2cm)$) {
+                \textcolor{PrimaryBlue}{Works with the smartphone customers already have}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{The infrastructure is already in consumers' pockets}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

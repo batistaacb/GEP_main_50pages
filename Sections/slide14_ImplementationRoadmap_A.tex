@@ -1,0 +1,99 @@
+% ==========================================================
+% SLIDE 48A: 2025 — From Idea to the Right Problem
+% ==========================================================
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How did the idea become the right problem?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We started by trying to build another Scan \& Go solution. By questioning the app, the customer journey, and the retailer's needs, we discovered that the real opportunity was solving the gap between physical retail and digital data. 
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{From Idea to the Right Problem}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.90cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            milestone/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                align=left,
+                fill=BlueCard,
+                line width=0.8pt,
+                font=\small,
+                text width=14cm
+            },
+            friction/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=3pt,
+                minimum width=3.2cm,
+                minimum height=0.7cm,
+                align=left,
+                fill=white,
+                line width=0.5pt,
+                font=\tiny
+            },
+            rproblem/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                align=left,
+                fill=BlueCard,
+                line width=0.8pt,
+                font=\small,
+                text width=14cm
+            }
+        ]
+            % ==================== PART 1: MILESTONES ====================
+            \node[milestone, fill=BlueCard] (idea) at (-4.0, 6.22) {
+                \textbf{Initial Idea (BB-Buy in a Blink)}: Turn an obsolete smartphone into a smart selling point, then take the solution to large physical retailers.
+            };
+            
+            \node[milestone, fill=PrimaryGoldLight, draw=PrimaryGold] (questions) at (-4, 5.2) {
+                \textbf{The Question:} Why build another Scan \& Go app when delivery platforms like iFood could do it?
+            };
+            
+            \node[milestone, fill=GoldCard, draw=PrimaryGold] (insight) at (-4, 4.2) {
+                \textbf{The Insight:} The core problem wasn't scanning. It was the gap between physical retail and digital data.
+            };
+             
+            % ==================== PART 2: REAL PROBLEM TEXT ====================
+            \node[rproblem, fill=GoldCard, draw=PrimaryGold] (insight) at (-4, 3.06) {
+
+                \textbf{\textcolor{PrimaryRed}{The Real Problem:}} Price tags are static and manual, creating operational costs and errors. 
+                They ultimately limit dynamic pricing. Our initial solution, however, required too many steps.
+
+            };
+
+% ==================== PART 3: FRICTION DIAGRAM ====================
+
+            % Placing nodes manually to avoid matrix errors
+            \node[friction, fill=BlueCard] (barcode) at (-9, 2.0) {Open a Barcode Reader};
+            \node[friction, fill=BlueCard] (reader) at (-4, 2.0) {Scan the product code};
+            \node[friction, fill=BlueCard] (copy) at (1, 2.0) {Copy the product code};
+
+            \node[friction, fill=GoldCard] (whatsapp) at (-9, 1.0) {Paste and send the code};
+            \node[friction, fill=GoldCard] (search) at (-4, 1.0) {Find the retailer's chat};
+            \node[friction, fill=GoldCard] (send) at (1, 1.0) {Switch to WhatsApp};
+
+            % Top-row flow
+            \draw[->, thick, PrimaryBlue] (barcode.east) -- (reader.west);
+            \draw[->, thick, PrimaryBlue] (reader.east) -- (copy.west);
+
+            % Small vertical connection
+            \draw[->, thick, PrimaryGold] (copy.south) -- (send.north);
+
+            % Bottom-row flow
+            \draw[->, thick, PrimaryGold] (send.west) -- (search.east);
+            \draw[->, thick, PrimaryGold] (search.west) -- (whatsapp.east);
+
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

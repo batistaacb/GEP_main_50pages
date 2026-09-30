@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F4: From Engineering to Systems Thinking
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What did engineering teach me?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                To break complex problems into smaller parts, connect them, and build solutions that work as a system.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{From Engineering to Systems Thinking}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.08cm,
+            tech/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=3.0cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=white,
+                line width=0.5pt,
+                font=\tiny,
+                inner sep=2pt
+            },
+            techblue/.style={
+                draw=PrimaryBlue,
+                rounded corners=4pt,
+                minimum width=3.0cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=BlueCard,
+                line width=1pt,
+                font=\tiny\bfseries,
+                inner sep=2pt
+            },
+            techgreen/.style={
+                draw=PrimaryGreen,
+                rounded corners=4pt,
+                minimum width=3.0cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=GreenCard,
+                line width=1pt,
+                font=\tiny\bfseries,
+                inner sep=2pt
+            },
+            techgold/.style={
+                draw=PrimaryGold,
+                rounded corners=4pt,
+                minimum width=3.0cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=GoldCard,
+                line width=1pt,
+                font=\tiny\bfseries,
+                inner sep=2pt
+            }
+        ]
+            % Row 1
+            \node[techblue] (t1) {Computational Modeling};
+            \node[tech, right=0.08cm of t1] (t2) {MATLAB \& Simulink};
+            \node[techgreen, right=0.08cm of t2] (t3) {AI / Neural Networks};
+            \node[tech, right=0.08cm of t3] (t4) {Embedded Systems};
+            
+            % Row 2
+            \node[techgold, below=0.08cm of t1] (t5) {Autonomous Systems};
+            \node[tech, below=0.08cm of t2] (t6) {Aerospace Engineering};
+            \node[techblue, below=0.08cm of t3] (t7) {Sensor Integration};
+            \node[tech, below=0.08cm of t4] (t8) {PCB / Electronics};
+            
+
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{15+ years of technical and systems engineering experience}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

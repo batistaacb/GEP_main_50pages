@@ -1,0 +1,48 @@
+ebezo ut-investor-deck/
+├── main.tex
+├── sections/
+│   ├── section 2/
+│   │   ├── slide01_Title.tex.tex
+│   │   ├── slide02_ProblemBlindspot.tex
+│   │   ├── slide03_ProblemPricetag.tex
+│   │   ├── slide04_Insight.tex
+│   │   ├── slide05_Solution.tex
+│   │   ├── slide06_HowItWorks.tex
+│   │   ├── slide07_CustomerJourney.tex
+│   │   ├── slide08_ProductExperience.tex
+│   │   ├── slide09_ProductChannel.tex
+│   │   ├── slide10_WhyNow.tex
+│   │   ├── slide11_DataMoat.tex
+│   │   ├── slide12_NetworkEffect.tex
+│   │   ├── slide13_CompetitiveAdvantage.tex
+│   │   ├── slide14_BusinessModel.tex
+│   │   └── slide15_VisionRoadmap.tex
+│   ├── section 3/
+│   │   ├── slide16_MarketOpportunity.tex
+│   │   ├── slide17_MarketExpansion.tex
+│   │   ├── slide18_JourneyDeepdive.tex
+│   │   ├── slide19_Architecture.tex
+│   │   ├── slide20_BusinessModelDetail.tex
+│   │   ├── slide21_Competition.tex
+│   │   ├── slide22_GTM.tex
+│   │   ├── slide23_Validation.tex
+│   │   ├── slide24_SmartScale.tex
+│   │   ├── slide25_SeaExpansion.tex
+│   │   ├── slide26_Team.tex
+│   │   ├── slide27_InvestmentCase.tex
+│   │   └── slide28_Risks.tex
+│   └── section 4/
+│       ├── slide29_ArchitectureDetail.tex
+│       ├── slide30_4DModelDetail.tex
+│       ├── slide31_SmartScaleTech.tex
+│       ├── slide32_AINutrition.tex
+│       ├── slide33_CSARoadmap.tex
+│       ├── slide34_MarketData.tex
+│       ├── slide35_FounderBio.tex
+│       ├── slide36_ProductFlow.tex
+│       ├── slide37_CompetitionTable.tex
+│       ├── slide38_ImplementationRoadmap.tex
+│       ├── slide39_DataPrivacy.tex
+│       └── slide40_ThankYou.tex
+└── images/
+    └── (placeholder for graphics)

@@ -1,0 +1,72 @@
+% ==========================================================
+% SLIDE 49B: 2025 — Discovering the Real Problem (Topics Only)
+% ==========================================================
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why does the price tag matter so much?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Because it looks simple, but it creates work, errors, limits pricing flexibility, and gives the retailer no connection to the customer's journey.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Price Tag Problem}}
+        \vspace{0.05cm}
+    \end{center}  
+
+    \vspace{-0.70cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            topicbox/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=12cm,
+                align=left,
+                fill=white,
+                line width=0.8pt,
+                font=\small,
+                text width=12cm,
+                inner sep=0.1cm
+            }
+        ]
+            % Topic 1: Hidden Friction
+
+            \node[topicbox, fill=BlueCard, align=left] (friction) {
+
+                \textbf{\textcolor{PrimaryRed}{The Hidden Friction:}} \\
+
+                A barcode scan was only the beginning. Customers had to scan, copy, switch 
+                apps, find the retailer, and send the code. We realized the real challenge was not 
+                scanning a product, but starting a conversation with the store.
+            };
+
+            % Topic 2: Real Problem
+
+            \node[topicbox, below=0.1cm of friction, fill=PrimaryGoldLight, draw=PrimaryGold, align=left] (problem) {
+
+                \textbf{\textcolor{PrimaryGold}{The Real Problem:}} \\
+
+                Supermarkets still depend on static, manually updated price tags. \\
+                This creates operational work and errors while making frequent price changes \\
+                 difficult. Solving this problem can unlock smarter pricing.
+            };
+
+            % Topic 3: Our Solution
+
+            \node[topicbox, below=0.1cm of problem, fill=GoldCard, draw=PrimaryGold, align=left] (solution) {
+
+                \textbf{\textcolor{PrimaryGreen}{Our Solution:}} \\
+
+                We replaced the multi-step barcode journey with one QR code that opens the \\
+                retailer's WhatsApp conversation with the product code already attached. Scan \\
+                \& Go and AI commerce became the tools. Solving the price-tag problem and \\
+                enabling dynamic pricing became our focus.
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

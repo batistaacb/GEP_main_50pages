@@ -1,0 +1,327 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% main.tex
+%% eBezout AI - Investor Deck
+%% Comprehensive 40-Slide Presentation
+%% Optimized for 1337 Ventures Pitch Tuesday
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    aspectratio=169,
+    11pt
+]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CONFIGURATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\opacidadeFundo}{10}
+\newcommand{\tamanhoQuestion}{\scriptsize}
+\newcommand{\tamanhoKeyMessage}{\tiny}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Libraries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetikzlibrary{
+    positioning,
+    calc,
+    fit,
+    backgrounds,
+    arrows.meta,
+    shapes.geometric,
+    shapes.misc,
+    shadows.blur,
+    decorations.pathreplacing,
+    matrix
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Color Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Primary Colors
+\definecolor{PrimaryBlue}{HTML}{1E3A8A}
+\definecolor{PrimaryBlueDark}{HTML}{172554}
+\definecolor{PrimaryBlueLight}{HTML}{DBEAFE}
+\definecolor{PrimaryBlueLighter}{HTML}{EFF6FF}
+
+\definecolor{PrimaryRed}{HTML}{DC2626}
+\definecolor{PrimaryRedDark}{HTML}{991B1B}
+\definecolor{PrimaryRedLight}{HTML}{FEE2E2}
+\definecolor{PrimaryRedLighter}{HTML}{FEF2F2}
+
+\definecolor{PrimaryGreen}{HTML}{16A34A}
+\definecolor{PrimaryGreenDark}{HTML}{166534}
+\definecolor{PrimaryGreenLight}{HTML}{DCFCE7}
+\definecolor{PrimaryGreenLighter}{HTML}{F0FDF4}
+
+\definecolor{PrimaryGold}{HTML}{F59E0B}
+\definecolor{PrimaryGoldLight}{HTML}{FEF3C7}
+\definecolor{PrimaryGoldDark}{HTML}{B45309}
+
+\definecolor{WhatsAppGreen}{HTML}{25D366}
+
+% Neutral Colors
+\definecolor{BackgroundWhite}{HTML}{FFFFFF}
+\definecolor{BackgroundGray}{HTML}{F8FAFC}
+\definecolor{BorderGray}{HTML}{D1D5DB}
+\definecolor{BorderLight}{HTML}{E5E7EB}
+\definecolor{DarkText}{HTML}{111827}
+\definecolor{BodyText}{HTML}{374151}
+\definecolor{LightText}{HTML}{6B7280}
+\definecolor{MutedText}{HTML}{9CA3AF}
+
+% Card Backgrounds
+\definecolor{BlueCard}{HTML}{EFF6FF}
+\definecolor{GreenCard}{HTML}{F0FDF4}
+\definecolor{RedCard}{HTML}{FEF2F2}
+\definecolor{GoldCard}{HTML}{FFFBEB}
+\definecolor{GrayCard}{HTML}{F3F4F6}
+
+% Diagram Colors
+\definecolor{ArrowColor}{HTML}{2563EB}
+\definecolor{ShadowColor}{HTML}{000000}
+
+% Status Colors
+\definecolor{SuccessColor}{HTML}{16A34A}
+\definecolor{WarningColor}{HTML}{F59E0B}
+\definecolor{DangerColor}{HTML}{DC2626}
+\definecolor{InfoColor}{HTML}{3B82F6}
+
+\newcommand{\source}[1]{\footnotesize\textcolor{LightText}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dynamic Colors for Background Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{FundoQuestion}{green!\opacidadeFundo}
+\colorlet{FundoKeyMessage}{green!\opacidadeFundo}
+\colorlet{FundoCorner}{blue!\opacidadeFundo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TikZ Styles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tikzset{
+    card/.style={
+        draw=PrimaryBlue,
+        fill=white,
+        rounded corners=8pt,
+        line width=0.8pt,
+        minimum width=3.6cm,
+        minimum height=1.2cm,
+        align=center,
+        blur shadow={shadow blur steps=5}
+    },
+    bluebox/.style={
+        draw=PrimaryBlue,
+        fill=BlueCard,
+        rounded corners=10pt,
+        line width=1pt,
+        inner sep=8pt
+    },
+    greenbox/.style={
+        draw=PrimaryGreen,
+        fill=GreenCard,
+        rounded corners=10pt,
+        line width=1pt,
+        inner sep=8pt
+    },
+    redbox/.style={
+        draw=PrimaryRed,
+        fill=RedCard,
+        rounded corners=10pt,
+        line width=1pt,
+        inner sep=8pt
+    },
+    goldbox/.style={
+        draw=PrimaryGold,
+        fill=GoldCard,
+        rounded corners=10pt,
+        line width=1pt,
+        inner sep=8pt
+    },
+    arrow/.style={
+        ->,
+        >=Stealth,
+        draw=ArrowColor,
+        line width=1.1pt
+    },
+    takeaway/.style={
+        draw=PrimaryBlue,
+        fill=BlueCard,
+        rounded corners=12pt,
+        line width=1pt,
+        minimum width=11cm,
+        minimum height=1.4cm,
+        align=center,
+        font=\large
+    },
+    statussuccess/.style={
+        draw=SuccessColor,
+        fill=GreenCard,
+        rounded corners=10pt,
+        minimum height=0.5cm,
+        inner sep=3pt,
+        font=\bfseries\footnotesize,
+        text=SuccessColor
+    },
+    statusinfo/.style={
+        draw=InfoColor,
+        fill=BlueCard,
+        rounded corners=10pt,
+        minimum height=0.5cm,
+        inner sep=3pt,
+        font=\bfseries\footnotesize,
+        text=InfoColor
+    },
+    statuswarning/.style={
+        draw=WarningColor,
+        fill=GoldCard,
+        rounded corners=10pt,
+        minimum height=0.5cm,
+        inner sep=3pt,
+        font=\bfseries\footnotesize,
+        text=WarningColor
+    }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Theme Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=DarkText,bg=BackgroundWhite}
+\setbeamercolor{title}{fg=PrimaryBlue}
+\setbeamercolor{frametitle}{fg=PrimaryBlue}
+\setbeamercolor{background canvas}{bg=BackgroundWhite}
+
+\setbeamerfont{title}{size=\Huge, series=\bfseries}
+\setbeamerfont{frametitle}{size=\Huge, series=\bfseries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{headline}{
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlue] (current page.north west) rectangle ([yshift=-0.75cm]current page.north east);
+        \node[anchor=west, text=white, font=\bfseries\small] at ([xshift=0.35cm,yshift=-0.38cm]current page.north west) {
+            eBezout AI
+        };
+        \node[anchor=east, text=white, font=\small] at ([xshift=-0.40cm,yshift=-0.38cm]current page.north east) {
+            Investor Deck
+        };
+    \end{tikzpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{footline}{
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlue] ([yshift=0.55cm]current page.south west) rectangle (current page.south east);
+        \node[anchor=west, text=white, font=\scriptsize] at ([xshift=0.4cm,yshift=0.25cm]current page.south west) {
+            eBezout AI — From Scan \& Go to Food Intelligence
+        };
+        \node[anchor=east, text=white, font=\scriptsize] at ([xshift=-0.4cm,yshift=0.25cm]current page.south east) {
+            \insertframenumber
+        };
+    \end{tikzpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Metadata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{eBezout AI}
+\subtitle{Democratizing AI Commerce}
+\author{Adilson Carlos Batista}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SECTION A — CORE PITCH (Slides 1-15)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Sections/SectionA/slide01.tex}
+\input{Sections/SectionA/slide02.tex}
+\input{Sections/SectionA/slide03.tex}
+\input{Sections/SectionA/slide04.tex}
+\input{Sections/SectionA/slide05.tex}
+\input{Sections/SectionA/slide06.tex}
+\input{Sections/SectionA/slide07.tex}
+\input{Sections/SectionA/slide08.tex}
+\input{Sections/SectionA/slide09.tex}
+\input{Sections/SectionA/slide10.tex}
+\input{Sections/SectionA/slide11.tex}
+\input{Sections/SectionA/slide12.tex}
+\input{Sections/SectionA/slide13.tex}
+\input{Sections/SectionA/slide14.tex}
+\input{Sections/SectionA/slide15.tex}
+\input{Sections/SectionA/slide16.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SECTION B — INVESTOR DEEP DIVE (Slides 16-28)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Sections/SectionB/slide16b.tex}
+\input{Sections/SectionB/slide17.tex}
+\input{Sections/SectionB/slide18.tex}
+\input{Sections/SectionB/slide19.tex}
+\input{Sections/SectionB/slide20.tex}
+\input{Sections/SectionB/slide21.tex}
+\input{Sections/SectionB/slide22.tex}
+\input{Sections/SectionB/slide23.tex}
+\input{Sections/SectionB/slide24.tex}
+\input{Sections/SectionB/slide25.tex}
+\input{Sections/SectionB/slide26.tex}
+\input{Sections/SectionB/slide27.tex}
+\input{Sections/SectionB/slide28.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SECTION C — APPENDIX / Q&A (Slides 29-40)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Sections/SectionC/slide29.tex}
+\input{Sections/SectionC/slide30.tex}
+\input{Sections/SectionC/slide31.tex}
+\input{Sections/SectionC/slide32.tex}
+\input{Sections/SectionC/slide33.tex}
+\input{Sections/SectionC/slide34.tex}
+\input{Sections/SectionC/slide35.tex}
+\input{Sections/SectionC/slide36.tex}
+\input{Sections/SectionC/slide37.tex}
+\input{Sections/SectionC/slide38.tex}
+\input{Sections/SectionC/slide39.tex}
+\input{Sections/SectionC/slide40.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END OF DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

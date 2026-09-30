@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F2: Building From Limited Resources
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How do you build expertise without privilege?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                Through public education, determination, and a habit of learning whatever was needed to move forward.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Building From Limited Resources}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.08cm,
+            step/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=3.4cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=white,
+                line width=0.5pt,
+                font=\tiny
+            },
+            stepblue/.style={
+                draw=PrimaryBlue,
+                rounded corners=4pt,
+                minimum width=3.4cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=BlueCard,
+                line width=1pt,
+                font=\tiny\bfseries
+            },
+            stepgreen/.style={
+                draw=PrimaryGreen,
+                rounded corners=4pt,
+                minimum width=3.4cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=GreenCard,
+                line width=1pt,
+                font=\tiny\bfseries
+            },
+            stepgold/.style={
+                draw=PrimaryGold,
+                rounded corners=4pt,
+                minimum width=3.4cm,
+                minimum height=0.6cm,
+                align=center,
+                fill=GoldCard,
+                line width=1pt,
+                font=\tiny\bfseries
+            }
+        ]
+            \node[stepblue] (s1) {Public High School};
+            \node[stepgreen, right=0.08cm of s1] (s2) {Electrical Engineering at UFSJ};
+            \node[stepgold, right=0.08cm of s2] (s3) {M.Sc. at ITA};
+            \node[stepblue, right=0.08cm of s3] (s4) {Ph.D. Candidate at ITA};
+
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.10cm,
+            detail/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=8.0cm,
+                minimum height=0.5cm,
+                align=left,
+                fill=white,
+                line width=0.5pt,
+                font=\tiny,
+                inner sep=3pt
+            }
+        ]
+            \node[
+                detail,
+                fill=BlueCard,
+                draw=PrimaryBlue,
+                text width=11.5cm,
+                minimum height=2.8cm,
+                align=left,
+                inner sep=8pt
+            ] (bio) {
+                \textcolor{PrimaryBlue}{\textbf{Founder \& CEO}}\\[0.15cm]
+                \textcolor{BodyText}{
+                Founder \& CEO with a background across aerospace systems, embedded engineering, AI and higher education. Bachelor of Engineering in Electrical Engineering from UFSJ, MSc. and PhD. candidates in Electronic Engineering \& Computing at ITA, with ~15 years of MATLAB/Simulink experience. Former Sales Engineer, Embedded Systems Engineer, Computer Engineering Professor \& Coordinator. Builds technology with a systems mindset, from autonomous vehicles to engineering education.
+                }
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{A foundation built through public education and determination}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

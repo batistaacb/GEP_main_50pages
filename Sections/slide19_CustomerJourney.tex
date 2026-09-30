@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 7: CUSTOMER EXPERIENCE — THE 4D MODEL
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What does eBezout learn from a shopping journey?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            What the customer looked at, when and where it happened, and whether they considered, added, removed, or bought the product.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Customer Journey}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            dim/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=2.6cm,
+                minimum height=3.0cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[dim, fill=BlueCard, draw=PrimaryBlue] (what) {
+                \textcolor{PrimaryBlue}{WHAT}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Product}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Interaction}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Category}
+            };
+            
+            \node[dim, right=0.15cm of what, fill=GreenCard, draw=PrimaryGreen] (when) {
+                \textcolor{PrimaryGreen}{WHEN}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Timestamp}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Sequence}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Duration}
+            };
+            
+            \node[dim, right=0.15cm of when, fill=GoldCard, draw=PrimaryGold] (where) {
+                \textcolor{PrimaryGold}{WHERE}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Location}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Aisle}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Shelf}
+            };
+            
+            \node[dim, right=0.15cm of where, fill=PrimaryRed!10, draw=PrimaryRed] (intent) {
+                \textcolor{PrimaryRed}{INTENT}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Considered}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Added / Removed}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Purchased}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{Capturing the decision-making journey, not just the final transaction.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

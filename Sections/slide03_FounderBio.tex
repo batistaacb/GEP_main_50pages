@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 47: DETAILED FOUNDER BIO
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Detailed Founder Bio};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                Deep technical expertise with a unique entrepreneurial journey.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.15cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Founder Bio — Adilson Batista}}
+        \vspace{0.03cm}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            bio/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=10.5cm,
+                minimum height=0.7cm,
+                align=left,
+                fill=white,
+                line width=0.6pt,
+                font=\normalsize,
+                inner sep=5pt
+            }
+        ]
+            \node[bio, fill=BlueCard, draw=PrimaryBlue] (b1) {
+                \textcolor{PrimaryBlue}{\textbf{Education:}} \textcolor{BodyText}{B.Eng. in Electrical Engineering — UFSJ}
+            };
+            \node[bio, below=0.10cm of b1, fill=GreenCard, draw=PrimaryGreen] (b2) {
+                \textcolor{PrimaryGreen}{\textbf{Graduate:}} \textcolor{BodyText}{M.Sc. in Electronic Engineering \& Computing — ITA}
+            };
+            \node[bio, below=0.10cm of b2, fill=GoldCard, draw=PrimaryGold] (b3) {
+                \textcolor{PrimaryGold}{\textbf{Research:}} \textcolor{BodyText}{Ph.D. Research in Electronic Engineering \& Computing — ITA}
+            };
+            \node[bio, below=0.10cm of b3, fill=BlueCard, draw=PrimaryBlue] (b4) {
+                \textcolor{PrimaryBlue}{\textbf{Experience:}} \textcolor{BodyText}{15+ years with MATLAB/Simulink and embedded systems}
+            };
+            \node[bio, below=0.10cm of b4, fill=GreenCard, draw=PrimaryGreen] (b5) {
+                \textcolor{PrimaryGreen}{\textbf{Industry:}} \textcolor{BodyText}{Aerospace engineering and autonomous unmanned systems}
+            };
+            \node[bio, below=0.10cm of b5, fill=GoldCard, draw=PrimaryGold] (b6) {
+                \textcolor{PrimaryGold}{\textbf{Academic:}} \textcolor{BodyText}{Professor and Computer Engineering Coordinator — Unoesc}
+            };
+            \node[bio, below=0.10cm of b6, fill=BlueCard, draw=PrimaryBlue] (b7) {
+                \textcolor{PrimaryBlue}{\textbf{Entrepreneur:}} \textcolor{BodyText}{Founder \& CEO of eBezout AI — Bootstrapped and lean}
+            };
+            \node[bio, below=0.10cm of b7, fill=GreenCard, draw=PrimaryGreen] (b8) {
+                \textcolor{PrimaryGreen}{\textbf{Background:}} \textcolor{BodyText}{Unique connection to strawberry farming and CSA}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    % \vspace{0.05cm}
+    % \begin{center}
+    %     \begin{tikzpicture}
+    %         \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+    %               minimum width=10.5cm, minimum height=0.5cm, 
+    %               align=center, line width=0.8pt, font=\small] {
+    %             \textcolor{PrimaryBlue}{Deep technical expertise combined with entrepreneurial drive}
+    %         };
+    %     \end{tikzpicture}
+    % \end{center}
+\end{frame}

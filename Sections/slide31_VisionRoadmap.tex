@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 14: VISION & ROADMAP
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.north west) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=-1cm,yshift=-2cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Where can solving the price-tag problem take us?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We start by making retail simpler, then turn shopping interactions into retail intelligence, and eventually use that intelligence to build smarter food systems.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Price Tag Is More Than a Problem}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.40cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            phase/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=3.4cm,
+                minimum height=3.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[phase, fill=BlueCard, draw=PrimaryBlue] (p1) {
+                \textcolor{PrimaryBlue}{\large\bfseries Phase 1}
+                \\[0.05cm]
+                \textcolor{PrimaryBlue}{\bfseries Today}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Scan \& Go}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Supermarket Pilots}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Democratize}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{AI Commerce}
+            };
+            
+            \node[phase, right=0.12cm of p1, fill=GreenCard, draw=PrimaryGreen] (p2) {
+                \textcolor{PrimaryGreen}{\large\bfseries Phase 2}
+                \\[0.05cm]
+                \textcolor{PrimaryGreen}{\bfseries Next}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Retail Intelligence}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Demand Forecasting}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Inventory Optimization}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Smart Offers}
+            };
+            
+            \node[phase, right=0.12cm of p2, fill=GoldCard, draw=PrimaryGold] (p3) {
+                \textcolor{PrimaryGold}{\large\bfseries Phase 3}
+                \\[0.05cm]
+                \textcolor{PrimaryGold}{\bfseries Future}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Food Intelligence}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Connect Consumers,}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Retailers \& Producers}
+                \\[0.1cm]
+                \footnotesize\textcolor{BodyText}{Food Security}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\large] {
+                \textcolor{PrimaryGreen}{Building the Behavioral Intelligence Infrastructure}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

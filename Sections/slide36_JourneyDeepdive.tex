@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 18: CUSTOMER JOURNEY — DEEP DIVE
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What does the customer experience from start to finish?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                The customer can shop at their own pace while the AI helps identify products, answer questions, make suggestions, manage the cart, and complete the purchase.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Complete Customer Journey}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.08cm,
+            boxstyle/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=0.7cm,
+                align=center,
+                fill=white,
+                line width=0.5pt,
+                font=\footnotesize
+            },
+            boxblue/.style={
+                draw=PrimaryBlue,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=0.7cm,
+                align=center,
+                fill=BlueCard,
+                line width=1pt,
+                font=\footnotesize\bfseries
+            },
+            boxgreen/.style={
+                draw=PrimaryGreen,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=0.7cm,
+                align=center,
+                fill=GreenCard,
+                line width=1pt,
+                font=\footnotesize\bfseries
+            }
+        ]
+            % Row 1
+            \node[boxblue] (s1) {1. Enter Store};
+            \node[boxstyle, right=0.5cm of s1] (s2) {2. Pick Product};
+            \node[boxgreen, right=0.5cm of s2] (s3) {3. Scan QR Code};
+            \node[boxstyle, right=0.5cm of s3] (s4) {4. App Opens};
+            
+            % Row 2
+            \node[boxblue, below=0.5cm of s1] (s5) {5. AI Identifies};
+            \node[boxstyle, below=0.5cm of s2] (s6) {6. Ask Questions};
+            \node[boxgreen, below=0.5cm of s3] (s7) {7. AI Responds};
+            \node[boxstyle, below=0.5cm of s4] (s8) {8. Recommendations};
+            
+            % Row 3
+            \node[boxblue, below=0.5cm of s5] (s9) {9. Add to Cart};
+            \node[boxstyle, below=0.5cm of s6] (s10) {10. Continue Shopping};
+            \node[boxgreen, below=0.5cm of s7] (s11) {11. Review Cart};
+            \node[boxstyle, below=0.5cm of s8] (s12) {12. Checkout};
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{A guided yet flexible shopping experience}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 9: PRODUCT AS A CHANNEL
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (2.5cm);
+        \fill[PrimaryBlueLighter, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (1.8cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why does every product become a channel?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Because the product can connect the customer directly to the store, turning each interaction into information that improves decisions and eventually helps producers plan better.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Every Product Becomes a Channel}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            fw/.style={
+                draw=PrimaryGold!70, 
+                rounded corners=6pt, 
+                minimum width=4.0cm, 
+                minimum height=1.6cm, 
+                align=center, 
+                fill=white, 
+                line width=1.2pt, 
+                font=\normalsize\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            arrow/.style={
+                ->, 
+                >=Stealth, 
+                line width=2.0pt, 
+                draw=PrimaryGold!90,
+                rounded corners=4pt
+            }
+        ]
+            \node[fw] (consumer) at (-2.6,1.3) {Consumer
+            \\[0.05cm] \footnotesize Intent \& Data};
+            \node[fw] (retailer) at (2.6,1.3) {Retailer
+            \\[0.05cm] \footnotesize Insights \& Optimization};
+            \node[fw] (producer) at (-2.6,-1.3) {Producer
+            \\[0.05cm] \footnotesize Planning \& Predictability};
+            \node[fw] (product) at (2.6,-1.3) {Product
+            \\[0.05cm] \footnotesize The Channel};
+            
+            \draw[arrow] (consumer.east) -- (retailer.west);
+            \draw[arrow] (retailer.south) -- (product.north);
+            \draw[arrow] (product.west) -- (producer.east);
+            \draw[arrow] (producer.north) -- (consumer.south);
+                            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=6pt, 
+                  minimum width=10.0cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGold}{A closed loop of value from consumer to producer}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 6: HOW IT WORKS — CUSTOMER JOURNEY
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What does shopping feel like with eBezout?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Like having a helpful store assistant in your pocket—ready to answer questions, keep track of your cart, and help you complete your purchase.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Shopping Becomes a Conversation}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.1cm,
+            flow/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=2.8cm,
+                minimum height=1.8cm,
+                align=center,
+                fill=white,
+                line width=0.8pt,
+                font=\footnotesize
+            }
+        ]
+            % Top row
+            \node[flow, fill=BlueCard, draw=PrimaryBlue] (f1) {
+                \textcolor{PrimaryBlue}{\textbf{1. Enter Store}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Pick up a product}
+            };
+            
+            \node[flow, right=0.1cm of f1, fill=GreenCard, draw=PrimaryGreen] (f2) {
+                \textcolor{PrimaryGreen}{\textbf{2. Scan QR Code}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Camera opens}
+                \\[0.05cm]
+                \textcolor{BodyText}{messaging app}
+            };
+            
+            \node[flow, right=0.1cm of f2, fill=GoldCard, draw=PrimaryGold] (f3) {
+                \textcolor{PrimaryGold}{\textbf{3. Chat with AI}}
+                \\[0.05cm]
+                \textcolor{BodyText}{``Is this gluten-free?''}
+                \\[0.05cm]
+                \textcolor{BodyText}{``Total so far?''}
+            };
+            
+            \node[flow, right=0.1cm of f3, fill=PrimaryBlue!10, draw=PrimaryBlue] (f4) {
+                \textcolor{PrimaryBlue}{\textbf{4. Checkout \& Go}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Complete purchase}
+                \\[0.05cm]
+                \textcolor{BodyText}{in the chat}
+            };
+            
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{Like having a personal shopping assistant in your pocket}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

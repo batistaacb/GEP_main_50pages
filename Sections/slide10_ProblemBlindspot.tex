@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 2: THE PROBLEM — RETAIL'S BLIND SPOT
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryRedLighter, opacity=0.15] ([xshift=-3cm,yshift=2cm]current page.south east) circle (5cm);
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=3cm,yshift=-2cm]current page.north west) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What does the supermarket miss before the purchase?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            It sees what customers buy, but not what they considered, compared, or decided not to buy.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.0cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Retail Sees the Purchase}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{columns}[T]
+        \column{0.48\textwidth}
+        \begin{center}
+            {\large\bfseries\textcolor{PrimaryGreen}{What Retail Knows}}
+            \vspace{0.05cm}
+            \begin{tikzpicture}
+                \node[draw=PrimaryGreen, rounded corners=6pt, 
+                      minimum width=4.5cm, minimum height=2.8cm, 
+                      align=center, inner sep=4pt, line width=1.2pt, fill=GreenCard] {
+                    \small Products purchased\\
+                    \vspace{0.1cm}
+                    \small Transaction value\\
+                    \vspace{0.1cm}
+                    \small Payment completed\\
+                    \vspace{0.1cm}
+                    \small Historical sales
+                };
+            \end{tikzpicture}
+        \end{center}
+
+        \column{0.48\textwidth}
+        \begin{center}
+            {\large\bfseries\textcolor{PrimaryRed}{What Retail Never Sees}}
+            \vspace{0.05cm}
+            \begin{tikzpicture}
+                \node[draw=PrimaryRed, rounded corners=6pt, 
+                      minimum width=4.5cm, minimum height=2.8cm, 
+                      align=center, inner sep=4pt, line width=1.2pt, fill=RedCard] {
+                    \small Products considered\\
+                    \vspace{0.1cm}
+                    \small Purchase intent\\
+                    \vspace{0.1cm}
+                    \small Customer journey\\
+                    \vspace{0.1cm}
+                    \small Individual preferences
+                };
+            \end{tikzpicture}
+        \end{center}
+    \end{columns}
+
+    \vspace{0.15cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.7cm, 
+                  align=center, line width=1.5pt, font=\large] {
+                \textcolor{PrimaryBlue}{Without customer intent, retailers optimize only the final transaction.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

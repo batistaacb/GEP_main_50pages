@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 44: SMART SCALE — TECHNICAL CONCEPT
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How will eBezout handle fruits and vegetables sold by weight?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                A future smart scale could recognize the product, capture its weight, and generate a QR Code that connects it directly to the customer's cart.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.0cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Smart Scale — Technical Concept}}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[node distance=0.15cm,
+            box/.style={
+                draw=PrimaryBlue!30, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=1.6cm, 
+                align=center, 
+                fill=white, 
+                line width=0.8pt,
+                font=\small,
+                inner sep=3pt
+            },
+            boxblue/.style={
+                draw=PrimaryBlue, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=1.6cm, 
+                align=center, 
+                fill=BlueCard, 
+                line width=1.2pt,
+                font=\small\bfseries,
+                inner sep=3pt
+            },
+            boxgold/.style={
+                draw=PrimaryGold, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=1.6cm, 
+                align=center, 
+                fill=GoldCard, 
+                line width=1.2pt,
+                font=\small\bfseries,
+                inner sep=3pt
+            },
+            boxgreen/.style={
+                draw=PrimaryGreen, 
+                rounded corners=4pt, 
+                minimum width=3.0cm, 
+                minimum height=1.6cm, 
+                align=center, 
+                fill=GreenCard, 
+                line width=1.2pt,
+                font=\small\bfseries,
+                inner sep=3pt
+            }
+        ]
+            % Row 1: Hardware (3 boxes)
+            \node[boxblue] (hw) at (-3.1,0.6) {
+                \textcolor{PrimaryBlue}{Hardware}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize Bluetooth Scale}
+            };
+            \node[box, right=0.15cm of hw] (sensor) {
+                \textcolor{PrimaryGold}{Sensor}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize Weight + Bluetooth}
+            };
+            \node[box, right=0.15cm of sensor] (data) {
+                \textcolor{PrimaryGold}{Data}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize Weight Measurement}
+            };
+            
+            % Row 2: AI + Integration (3 boxes)
+            \node[boxgold, below=0.15cm of hw] (ai) {
+                \textcolor{PrimaryGold}{AI Layer}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize Image Recognition}
+            };
+            \node[box, below=0.15cm of sensor] (vision) {
+                \textcolor{PrimaryGold}{Vision}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize Computer Vision}
+            };
+            \node[boxgreen, below=0.15cm of data] (int) {
+                \textcolor{PrimaryGreen}{Integration}
+                \\[0.02cm]
+                \textcolor{BodyText}{\footnotesize QR Code Generation}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.7cm, 
+                  align=center, line width=1pt, font=\large] {
+                \textcolor{PrimaryGold}{Future Concept — Not currently deployed}
+                \\[0.02cm]
+                \textcolor{BodyText}{\small Represents our vision for a fully connected fresh produce experience}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

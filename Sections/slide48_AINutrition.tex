@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 32: AI NUTRITION & SUSTAINABILITY
+%% APPENDIX / Q&A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryBlueLighter, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How can eBezout make food shopping smarter?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                AI can help customers understand what they buy and make better choices, while better demand information can eventually help reduce waste and strengthen local food systems.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{AI Nutrition \& Sustainability}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.10cm,
+            box/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=4.8cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=white,
+                line width=0.8pt,
+                font=\footnotesize,
+                inner sep=4pt
+            }
+        ]
+            \node[box, fill=GreenCard, draw=PrimaryGreen] (n1) {
+                \textcolor{PrimaryGreen}{\textbf{Nutritional Intelligence}}
+                \\[0.05cm]
+                \textcolor{BodyText}{AI provides real-time nutritional information}
+                \\[0.05cm]
+                \textcolor{BodyText}{Personalized recommendations based on health goals}
+            };
+            
+            \node[box, right=0.10cm of n1, fill=BlueCard, draw=PrimaryBlue] (n2) {
+                \textcolor{PrimaryBlue}{\textbf{Waste Reduction}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Better demand forecasting}
+                \\[0.05cm]
+                \textcolor{BodyText}{Reduced food waste through smarter planning}
+            };
+            
+            \node[box, below=0.10cm of n1, fill=GoldCard, draw=PrimaryGold] (n3) {
+                \textcolor{PrimaryGold}{\textbf{Sustainable Choices}}
+                \\[0.05cm]
+                \textcolor{BodyText}{AI suggests sustainable alternatives}
+                \\[0.05cm]
+                \textcolor{BodyText}{Support local producers and CSA}
+            };
+            
+            \node[box, right=0.10cm of n3, fill=GreenCard, draw=PrimaryGreen] (n4) {
+                \textcolor{PrimaryGreen}{\textbf{Food Security}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Better production planning}
+                \\[0.05cm]
+                \textcolor{BodyText}{Resilient food systems}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.4cm, 
+                  align=center, line width=0.5pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{Long-term vision — Building the intelligence layer for food systems}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

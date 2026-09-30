@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 27: INVESTMENT CASE
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What are we looking for from an investor?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Not just money. We need the capital, connections, and market access to turn the MVP into a scalable business.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Investment Case}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            case/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=6pt,
+                minimum width=9.0cm,
+                minimum height=0.7cm,
+                align=left,
+                fill=white,
+                line width=0.8pt,
+                font=\footnotesize,
+                inner sep=4pt
+            }
+        ]
+            \node[case, fill=BlueCard, draw=PrimaryBlue] (c1) {
+                \textcolor{PrimaryBlue}{\textbf{Seeking:}} \textcolor{BodyText}{Smart Money — Not just a check}
+            };
+            \node[case, below=0.12cm of c1, fill=GreenCard, draw=PrimaryGreen] (c2) {
+                \textcolor{PrimaryGreen}{\textbf{Use of Funds:}} \textcolor{BodyText}{\$1,000 — Enhance immediate pilot showcase}
+            };
+            \node[case, below=0.12cm of c2, fill=GoldCard, draw=PrimaryGold] (c3) {
+                \textcolor{PrimaryGold}{\textbf{Use of Funds:}} \textcolor{BodyText}{\$7,000 — Build professional, scalable platform}
+            };
+            \node[case, below=0.12cm of c3, fill=BlueCard, draw=PrimaryBlue] (c4) {
+                \textcolor{PrimaryBlue}{\textbf{What We Offer:}} \textcolor{BodyText}{Proven concept, scalable model, massive market}
+            };
+            \node[case, below=0.12cm of c4, fill=GreenCard, draw=PrimaryGreen] (c5) {
+                \textcolor{PrimaryGreen}{\textbf{Strategic Value:}} \textcolor{BodyText}{Partnership for market access and commercialization}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGold}{Looking for the right capital and ecosystem, not simply the largest check}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

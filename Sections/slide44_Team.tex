@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 40: THE TEAM
+%% LEAN CORE, SPECIALIZED NETWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why is eBezout built with a lean team?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We keep the core team focused and bring in specialized expertise when needed, from software and retail to project management and investment.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.50cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Lean Core, Specialized Network}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            founder/.style={
+                draw=PrimaryBlue,
+                rounded corners=5pt,
+                minimum width=9.0cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=BlueCard,
+                line width=1.2pt,
+                inner sep=3pt,
+                drop shadow={shadow xshift=0.5pt, shadow yshift=-0.5pt, fill=ShadowColor}
+            },
+            advisor/.style={
+                draw=PrimaryGold!70,
+                rounded corners=4pt,
+                minimum width=9.0cm,
+                minimum height=0.8cm,
+                align=center,
+                fill=GoldCard,
+                line width=0.8pt,
+                inner sep=2pt,
+                drop shadow={shadow xshift=0.5pt, shadow yshift=-0.5pt, fill=ShadowColor}
+            },
+            partner/.style={
+                draw=PrimaryBlue!35,
+                rounded corners=3pt,
+                minimum width=4.2cm,
+                minimum height=1.5cm,
+                align=center,
+                fill=white,
+                line width=0.6pt,
+                inner sep=2pt
+            },
+            partnertwo/.style={
+                draw=PrimaryBlue!35,
+                rounded corners=3pt,
+                minimum width=2.8cm,
+                minimum height=1.5cm,
+                align=center,
+                fill=white,
+                line width=0.6pt,
+                inner sep=2pt
+            }
+        ]
+            % Row 1: Founder
+            \node[founder] (founder) {
+                \textcolor{PrimaryBlue}{\scriptsize\bfseries Adilson Batista -- }%\\ 
+                \textcolor{PrimaryBlue}{\tiny Founder \& CEO}\\[0.005cm]
+                \textcolor{LightText}{\tiny Vision • Product • Business • Strategy}
+            };
+
+            % Row 2: Mentor
+            \node[advisor, below=0.10cm of founder] (mentor) {
+                \textcolor{PrimaryGold}{\scriptsize\bfseries Lester de Abreu Faria -- }%
+                \textcolor{PrimaryGold!80}{\tiny Mentor \& Network}\\[0.005cm]
+                \textcolor{LightText}{\tiny PhD • Former Cel. Av. FAB}
+            };
+
+            % Row 3: Kennildo + Elisângela (side by side)
+            \node[partner, below=0.15cm of mentor, xshift=-2.35cm] (partner1) {
+                \textcolor{BodyText}{\bfseries\scriptsize Kennildo Bastos}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Software Engineering Partner}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Development • MVP • Platform}
+            };
+
+            \node[partner, below=0.15cm of mentor, xshift=2.35cm] (partner2) {
+                \textcolor{BodyText}{\bfseries\scriptsize Elisângela Gonçalves}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Retail Operations Specialist}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny MVP Design • Operations}
+            };
+
+            % Row 4: Marcelo + Eduardo + Diego (three cards)
+            \node[partnertwo, below=0.1cm of partner1, xshift=-0.70cm] (partner3) {
+                \textcolor{BodyText}{\bfseries\scriptsize Marcelo Bezerra}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Project Management}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Startup • Execution}
+            };
+
+            \node[partnertwo, below=0.1cm of partner1, xshift=2.35cm] (partner4) {
+                \textcolor{BodyText}{\bfseries\scriptsize Eduardo Paes}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Retail Sales Advisor}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Sales • Commercial}
+            };
+
+            \node[partnertwo, below=0.1cm of partner2, xshift=0.70cm] (partner5) {
+                \textcolor{BodyText}{\bfseries\scriptsize Diego Bandeira}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Investment Advisor}
+                \\[0.005cm]
+                \textcolor{LightText}{\tiny Fundraising • Strategy}
+            };
+
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.6cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=3pt, 
+                  minimum width=9.0cm, minimum height=0.30cm, 
+                  align=center, line width=0.6pt, font=\tiny] {
+                \textcolor{PrimaryGreen}{Lean by design — specialized expertise engaged as needed.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

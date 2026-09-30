@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 5: THE SOLUTION (CLEAN VERSION)
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=0cm,yshift=0cm]current page.center) circle (4.5cm);
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How do we make this simple for the customer?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Scan a QR Code with the smartphone you already have, and start a conversation with the store through a messaging app.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Scan \& Go and AI Commerce \faTools}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.3cm,
+            tech/.style={
+                draw=PrimaryBlue!50,
+                rounded corners=6pt,
+                minimum width=2.6cm,
+                minimum height=2.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[tech, fill=BlueCard, draw=PrimaryBlue] (scan) {
+                \textcolor{PrimaryBlue}{Scan}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{QR Code on}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{product shelf}
+            };
+            
+            \node[tech, right=0.3cm of scan, fill=GreenCard, draw=PrimaryGreen] (chat) {
+                \textcolor{PrimaryGreen}{Chat}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{WhatsApp with}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{AI Assistant}
+            };
+            
+            \node[tech, right=0.3cm of chat, fill=GoldCard, draw=PrimaryGold] (commerce) {
+                \textcolor{PrimaryGold}{Commerce}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Information,}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Checkout}
+            };
+            
+            \node[tech, right=0.3cm of commerce, fill=PrimaryBlue!10, draw=PrimaryBlue] (intel) {
+                \textcolor{PrimaryBlue}{Intelligence}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Behavioral}
+                \\[0.05cm]
+                \footnotesize\textcolor{BodyText}{Data}
+            };
+            
+            % \draw[arrow, line width=2pt, PrimaryBlue!80] 
+            %     ($(scan.south)!0.5!(intel.south)$) -- ++(0,-0.6cm);
+            
+            \node[draw=PrimaryBlue, fill=PrimaryBlue!10, rounded corners=8pt, 
+                  minimum width=10.0cm, minimum height=0.8cm, align=center, 
+                  line width=2pt, font=\large\bfseries]
+                at ($(scan.south)!0.5!(intel.south) + (0,-1.2cm)$) {
+                \textcolor{PrimaryBlue}{QR Code + smartphone + AI Commerce.}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\large] {
+                \textcolor{PrimaryGreen}{A simpler path to digital physical retail.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

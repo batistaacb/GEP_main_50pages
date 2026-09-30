@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 7: CUSTOMER EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[WhatsAppGreen, opacity=0.05] ([xshift=3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=-1cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What can an AI shopping assistant do for the customer?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            It can answer questions, track the cart, help manage the budget, and suggest products based on the customer's needs.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.4cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Shopping Becomes a Conversation}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{columns}[T]
+        \column{0.30\textwidth}
+        \begin{center}
+            \begin{tikzpicture}
+                \node[draw=DarkText!20, rounded corners=8pt, minimum width=2.8cm, minimum height=4.8cm, fill=white, line width=0.8pt, align=center] {
+                    \vspace{0.05cm}
+                    \textcolor{WhatsAppGreen}{\textbf{AI Assistant}}\\
+                    \vspace{0.5cm}
+                    \begin{minipage}{3.4cm}
+                        \scriptsize
+                        \textcolor{PrimaryGreen}{You:} What's in this?\\
+                        \textcolor{PrimaryBlue}{AI:} Organic pasta, wheat\\
+                        \textcolor{PrimaryGreen}{You:} Total?\\
+                        \textcolor{PrimaryBlue}{AI:} \$24.50 — within budget\\
+                        \textcolor{PrimaryGreen}{You:} Nutrition?\\
+                        \textcolor{PrimaryBlue}{AI:} 450 cal, 15g protein
+                    \end{minipage}
+                };
+            \end{tikzpicture}
+        \end{center}
+
+        \column{0.67\textwidth}
+        \begin{center}
+            \begin{tikzpicture}[
+                node distance=0.15cm,
+                benefit/.style={
+                    draw=PrimaryBlue!30, 
+                    rounded corners=4pt, 
+                    minimum width=6.8cm, 
+                    minimum height=0.65cm, 
+                    align=left, 
+                    fill=white, 
+                    line width=0.8pt, 
+                    inner sep=4pt, 
+                    font=\footnotesize
+                }
+            ]
+                \node[benefit, fill=GreenCard, draw=PrimaryGreen] (b1) {
+                    \textbf{Financial Calculator} — No surprises at checkout
+                };
+                \node[benefit, below=0.15cm of b1, fill=BlueCard, draw=PrimaryBlue] (b2) {
+                    \textbf{Nutritional Control} — Track what's in your cart
+                };
+                \node[benefit, below=0.15cm of b2] (b3) {
+                    \textbf{AI Learns Your Preferences} — Allergies, budget, favorites
+                };
+                \node[benefit, below=0.15cm of b3] (b4) {
+                    \textbf{Smart Product Suggestions} — Healthier or cheaper alternatives
+                };
+                \node[benefit, below=0.15cm of b4, fill=GoldCard, draw=PrimaryGold] (b5) {
+                    \textbf{Autopilot Shopping} — AI shops for you when you're busy
+                };
+            \end{tikzpicture}
+            
+            \vspace{0.05cm}
+            \begin{tikzpicture}
+                \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=6pt, minimum width=8.0cm, minimum height=0.8cm, align=center, line width=1pt, font=\small] {
+                    \textbf{Reinforcement learning —}
+                    \text{AI gets smarter with you}
+                };
+            \end{tikzpicture}
+        \end{center}
+    \end{columns}
+\end{frame}

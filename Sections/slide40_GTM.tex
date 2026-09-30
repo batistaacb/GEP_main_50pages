@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 22: GO-TO-MARKET STRATEGY
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How do we get eBezout into supermarkets?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We start with direct conversations, run a real pilot, prove the value, and use that success to win the next retailers.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Go-to-Market Strategy}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            gtm/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=2.6cm,
+                minimum height=2.2cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\footnotesize,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[gtm, fill=BlueCard, draw=PrimaryBlue] (p1) {
+                \textcolor{PrimaryBlue}{\textbf{Phase 1}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Direct Sales}
+                \\[0.05cm]
+                \textcolor{BodyText}{Supermarket Visits}
+                \\[0.05cm]
+                \textcolor{BodyText}{Retail Events}
+                \\[0.05cm]
+                \textcolor{BodyText}{Networking}
+            };
+            
+            \node[gtm, right=0.15cm of p1, fill=GreenCard, draw=PrimaryGreen] (p2) {
+                \textcolor{PrimaryGreen}{\textbf{Phase 2}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Pilot Program}
+                \\[0.05cm]
+                \textcolor{BodyText}{Local Supermarket}
+                \\[0.05cm]
+                \textcolor{BodyText}{Real Customers}
+                \\[0.05cm]
+                \textcolor{BodyText}{Validation}
+            };
+            
+            \node[gtm, right=0.15cm of p2, fill=GoldCard, draw=PrimaryGold] (p3) {
+                \textcolor{PrimaryGold}{\textbf{Phase 3}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Case Study}
+                \\[0.05cm]
+                \textcolor{BodyText}{Refine Model}
+                \\[0.05cm]
+                \textcolor{BodyText}{Prove ROI}
+                \\[0.05cm]
+                \textcolor{BodyText}{Build Credibility}
+            };
+            
+            \node[gtm, right=0.15cm of p3, fill=PrimaryBlue!10, draw=PrimaryBlue] (p4) {
+                \textcolor{PrimaryBlue}{\textbf{Phase 4}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Scale}
+                \\[0.05cm]
+                \textcolor{BodyText}{Referrals}
+                \\[0.05cm]
+                \textcolor{BodyText}{Events}
+                \\[0.05cm]
+                \textcolor{BodyText}{Expansion}
+            };
+                       
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{The primary challenge is not technical development —}
+                \\[0.05cm]
+                \textcolor{BodyText}{it's access to retail decision-makers.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

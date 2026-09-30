@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 13: COMPETITIVE ADVANTAGE
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What makes eBezout different?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                Traditional retail mainly sees what customers buy. eBezout also learns from what they consider, ask about, add, remove, and decide not to buy.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Why We're Different}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            compbox/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=6pt,
+                minimum width=4.8cm,
+                minimum height=3.2cm,
+                align=center,
+                fill=white,
+                line width=1pt,
+                inner sep=6pt,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            title/.style={
+                font=\bfseries\footnotesize,
+                text=PrimaryBlue
+            }
+        ]
+            \node[compbox, draw=PrimaryGold!60, fill=GrayCard] (traditional) {
+                \title{Traditional Retail}
+                \\[0.05cm]
+                \textcolor{BodyText}{\footnotesize Optimizes completed purchases}
+                \\[0.05cm]
+                \textcolor{BodyText}{\footnotesize Learns from historical sales}
+                \\[0.05cm]
+                \textcolor{BodyText}{\footnotesize Understands transactions}
+            };
+            
+            \node[compbox, right=0.3cm of traditional, draw=PrimaryGreen, fill=GreenCard] (ebezout) {
+                \title{\textcolor{PrimaryGreen}{eBezout AI}}
+                \\[0.05cm]
+                \textcolor{PrimaryGreen}{\footnotesize Captures customer intent before checkout}
+                \\[0.05cm]
+                \textcolor{PrimaryGreen}{\footnotesize Learns from every interaction}
+                \\[0.05cm]
+                \textcolor{PrimaryGreen}{\footnotesize Enables AI Commerce}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.0cm, minimum height=0.7cm, 
+                  align=center, line width=1pt, font=\footnotesize] {
+                \textcolor{PrimaryGreen}{eBezout AI creates value before the purchase is completed}
+                \\[0.05cm]
+                \textcolor{BodyText}{Transforming every interaction into business intelligence.}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

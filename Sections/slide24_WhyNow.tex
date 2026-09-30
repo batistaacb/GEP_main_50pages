@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 10: WHY NOW?
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \fill[PrimaryGreenLighter, opacity=0.04] ([xshift=-1cm,yshift=-2cm]current page.center) circle (2.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why is the time right for eBezout?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            The technology is ready, retailers are becoming more digital, and the need for smarter food systems is growing.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Perfect Timing}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            pillar/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=3.4cm,
+                minimum height=1.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                inner sep=4pt,
+                font=\small,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[pillar, fill=GreenCard, draw=PrimaryGreen] (ai) {
+                \textcolor{PrimaryGreen}{\bfseries AI Maturity}
+                \\[0.05cm]
+                \footnotesize Conversational AI
+                \\[0.05cm]
+                \footnotesize \& LLMs
+                \\[0.05cm]
+                \footnotesize Computer Vision
+            };
+            
+            \node[pillar, right=0.12cm of ai, fill=BlueCard, draw=PrimaryBlue] (retail) {
+                \textcolor{PrimaryBlue}{\bfseries Retail Transformation}
+                \\[0.05cm]
+                \footnotesize Digital Commerce
+                \\[0.05cm]
+                \footnotesize Moving Offline
+                \\[0.05cm]
+                \footnotesize Consumer Expectations
+            };
+            
+            \node[pillar, right=0.12cm of retail, fill=GoldCard, draw=PrimaryGold] (food) {
+                \textcolor{PrimaryGold}{\bfseries Food Security}
+                \\[0.05cm]
+                \footnotesize Global Priority
+                \\[0.05cm]
+                \footnotesize Sustainable Systems
+                \\[0.05cm]
+                \footnotesize Reduced Waste
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=6pt, 
+                  minimum width=10.0cm, minimum height=0.8cm, 
+                  align=center, line width=1pt, font=\footnotesize] {
+                \textcolor{PrimaryBlue}{The infrastructure for AI Commerce is now available}
+                \\[0.05cm]
+                \textcolor{BodyText}{to every retailer with a smartphone and every consumer with a messaging app.}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.3cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.0cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{The convergence of technology creates unprecedented opportunity}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

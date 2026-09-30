@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 5: DEMOCRATIZING AI COMMERCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=-4cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How do we solve the price-tag problem?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We replace the static label with a simple digital connection: customers scan a QR Code with their smartphone and start a conversation with the store.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.0cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Solving the Price-tag Problem}}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[node distance=0.5cm,
+            innovator/.style={
+                draw=PrimaryBlue!30, 
+                rounded corners=4pt, 
+                minimum width=2.2cm, 
+                minimum height=1.2cm, 
+                align=center, 
+                fill=white, 
+                line width=0.8pt,
+                font=\small
+            }
+        ]
+            \node[innovator] (karl) {\textcolor{PrimaryGold}{Karl Drais}\\\footnotesize \textcolor{PrimaryBlue}{Mobility}};
+            \node[innovator, right=0.2cm of karl] (tesla) {\textcolor{PrimaryGold}{Nikola Tesla}\\\footnotesize \textcolor{PrimaryBlue}{Electricity}};
+            \node[innovator, right=0.2cm of tesla] (ford) {\textcolor{PrimaryGold}{Henry Ford}\\\footnotesize \textcolor{PrimaryBlue}{Cars}};
+            \node[innovator, right=0.2cm of ford] (jobs) {\textcolor{PrimaryGold}{Steve Jobs}\\\footnotesize \textcolor{PrimaryBlue}{Computing}};
+            \node[innovator, right=0.2cm of jobs] (musk) {\textcolor{PrimaryGold}{Elon Musk}\\\footnotesize \textcolor{PrimaryBlue}{SpaceX}};
+            \node[innovator, right=0.2cm of musk] (bizu) {\textcolor{PrimaryGold}{Adilson Batista}\\\footnotesize \textcolor{PrimaryBlue}{Smart Pricing}};
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.0cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, minimum width=10.5cm, minimum height=0.6cm, align=center, line width=1pt, font=\large] {
+                \textcolor{PrimaryGreen}{Every Scan Creates Value:} Value for the customer --- Intelligence for the retailer
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

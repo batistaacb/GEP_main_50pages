@@ -1,0 +1,67 @@
+% ==========================================================
+% SLIDE 50C: 2026 — Validation, Setbacks and Refinement
+% ==========================================================
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How did we respond when the market challenged us?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We listened to customers, changed the product, tested it in a real supermarket, and kept learning.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Adaptability}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            milestone/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                align=center,
+                fill=white,
+                line width=0.8pt,
+                font=\small,
+                text width=12cm
+            }
+        ]
+            % ==================== BOX 1: SETBACKS ====================
+            \node[milestone, fill=RedCard, align=left] (setbacks) at (0, 7.0) {
+
+                \textbf{\textcolor{PrimaryRed}{Setbacks:}} Not selected for Shark Tank Brasil. Expo Supermercados and APAS \\
+                Show were beyond our budget. We learned that visibility alone is not enough.
+
+            };
+            
+            % ==================== BOX 2: PIVOTAL CONVERSATION ====================
+            \node[milestone, fill=PrimaryGoldLight, draw=PrimaryGold, align=left] (braga) at (0, 5.6) {
+                \textbf{\textcolor{PrimaryGold}{The Pivotal Conversation:}} A supermarket manager asked: How will my \\
+                customer start using it and connect with us on WhatsApp?
+            };
+            
+            \node[milestone, fill=GoldCard, draw=PrimaryGreen, align=left] (insight) at (0, 4.2) {
+
+                \textbf{\textcolor{PrimaryGreen}{The Adaptation:}} Our POC with Supermercado Nova Borda is helping us refine \\
+                the product in a real retail environment, with significant improvements focused \\
+                on usability for supermarket staff and, above all, customers.
+
+            };
+            
+            % ==================== BOX 4: PERSISTENCE & VALIDATION ====================
+            \node[milestone, fill=PrimaryBlue!10, align=left] (persistence) at (0, 2.4) {
+
+                \textbf{\textcolor{PrimaryBlue}{Persistence \& Validation:}} Indetec UFSJ, Batch\#28 PIT SJC, Centelha and \\
+                ITA Challenge. Positive feedback across these programs has helped validate the \\
+                problem, refine the solution and strengthen our direction.
+
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,88 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 11: RETAIL INTELLIGENCE
+%% CORE PITCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What does eBezout help the retailer see?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Not only what customers buy, but what they considered, when and where they interacted, and what they decided to do.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Retail Intelligence}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            layer/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=6pt,
+                minimum width=4.5cm,
+                minimum height=2.4cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\small\bfseries
+            }
+        ]
+                % Traditional Data
+                \node[layer, draw=PrimaryBlue!30, fill=BlueCard,
+                    minimum width=5.5cm, minimum height=3.2cm] (trad) {
+                    \textcolor{PrimaryBlue}{Traditional Retail Data}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Products purchased}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Transaction value}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Payment completed}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Historical sales}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Inventory movement}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Final transaction}
+                };
+
+                % eBezout Data
+                \node[layer, right=0.15cm of trad, draw=PrimaryGreen, fill=GreenCard,
+                    minimum width=5.5cm, minimum height=3.2cm] (ebezout) {
+                    \textcolor{PrimaryGreen}{eBezout AI Behavioral Data}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Products considered}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Purchase intent}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Customer journey}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Products added/removed}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Timestamps \& location}
+                    \\[0.05cm]
+                    \footnotesize\textcolor{BodyText}{Interaction sequence}
+                };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=10.5cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{Unprecedented understanding of consumer intent}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

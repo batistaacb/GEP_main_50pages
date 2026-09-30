@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F5: The Entrepreneur Behind eBezout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryGoldLight, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.center) circle (3.5cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.center) circle (3cm);
+        \fill[PrimaryBlueLighter, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (2.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What brought me to entrepreneurship?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                A desire to solve real problems, combine what I know, and build something useful.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{The Entrepreneur Behind eBezout}}
+        \vspace{0.1cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            attr/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=6pt,
+                minimum width=11.0cm,
+                minimum height=0.9cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\large\bfseries,
+                inner sep=6pt,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[attr, fill=GreenCard, draw=PrimaryGreen] (a1) {
+                \textcolor{PrimaryGreen}{Technical:} \textcolor{BodyText}{AI, engineering, systems, electronics, software, data}
+            };
+            \node[attr, below=0.15cm of a1, fill=BlueCard, draw=PrimaryBlue] (a2) {
+                \textcolor{PrimaryBlue}{Business:} \textcolor{BodyText}{Customer discovery, sales, communication, leadership}
+            };
+            \node[attr, below=0.15cm of a2, fill=GoldCard, draw=PrimaryGold] (a3) {
+                \textcolor{PrimaryGold}{Real-World:} \textcolor{BodyText}{Food production, retail observation, operational problems}
+            };
+            \node[attr, below=0.15cm of a3, fill=GreenCard, draw=PrimaryGreen] (a4) {
+                \textcolor{PrimaryGreen}{Vision:} \textcolor{BodyText}{AI Commerce, physical retail, food intelligence}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.4cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold!50, fill=GoldCard, rounded corners=6pt, 
+                  minimum width=11.5cm, minimum height=0.7cm, 
+                  align=center, line width=1.2pt, font=\large\bfseries] {
+                \textcolor{PrimaryGold}{eBezout sits at the intersection of technology, business, and food}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

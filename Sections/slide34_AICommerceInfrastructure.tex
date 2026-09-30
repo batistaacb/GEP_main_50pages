@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 16: LOOKING AHEAD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-2cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=3cm,yshift=-1cm]current page.north west) circle (3.5cm);
+        \fill[PrimaryGoldLight, opacity=0.04] ([xshift=-1cm,yshift=-2cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What are we building beyond the MVP?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We are turning the MVP into a commercial platform that can start with Scan \& Go, grow through retail pilots, and eventually scale into Food Intelligence.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.5cm}
+    \begin{center}
+        {\LARGE\bfseries\textcolor{PrimaryBlue}{Building the AI Commerce Infrastructure}}
+        
+        \vspace{0.05cm}
+        \begin{tikzpicture}
+            \node[
+                draw=PrimaryBlue,
+                fill=BlueCard,
+                rounded corners=8pt,
+                minimum width=10.5cm,
+                minimum height=1.4cm,
+                align=center,
+                line width=1.5pt
+            ]{
+                \Large\textcolor{PrimaryBlue}{Starting with Scan \& Go}
+                \\[0.08cm]
+                \normalsize\textcolor{BodyText}{
+                    Scaling AI Commerce, Empowering Local Food Networks,
+                }
+                \\
+                \normalsize\textcolor{BodyText}{
+                    Building Food Security through Community Supported Agriculture
+                }
+            };
+        \end{tikzpicture}
+        
+        \vspace{0.1cm}
+        \begin{tikzpicture}
+            \node[
+                draw=PrimaryBlue!40,
+                fill=BlueCard,
+                rounded corners=6pt,
+                minimum width=10.5cm,
+                minimum height=1.6cm,
+                align=center,
+                line width=1pt,
+                inner sep=6pt
+            ]{
+                \begin{minipage}{12cm}
+                    \centering
+                    \textcolor{PrimaryBlue}{\textbf{\large Looking Ahead}}\\[0.1cm]
+                    \begin{tikzpicture}[
+                        node distance=0.25cm,
+                        stage/.style={
+                            draw=PrimaryBlue!30,
+                            rounded corners=4pt,
+                            minimum width=3.0cm,
+                            minimum height=1.8cm,
+                            align=center,
+                            fill=white,
+                            line width=0.8pt,
+                            font=\scriptsize
+                        }
+                    ]
+                        \node[stage, fill=GrayCard] (prev) {
+                            \textcolor{PrimaryBlue}{\textbf{\large Previous}}\\
+                            \vspace{0.05cm}
+                            \begin{tabular}{c}
+                                R \& D\\
+                                Patent Filed\\
+                                MVP
+                            \end{tabular}
+                        };
+                        
+                        \node[stage, right=0.25cm of prev, fill=GreenCard, draw=PrimaryGreen] (now) {
+                            \textcolor{PrimaryGreen}{\textbf{\large Now}}\\
+                            \vspace{0.05cm}
+                            \begin{tabular}{c}
+                                MVP Improved\\
+                                Looking for Pilots / Seed\\
+                                Build Commercial Version
+                            \end{tabular}
+                        };
+                        
+                        \node[stage, right=0.25cm of now, fill=GoldCard, draw=PrimaryGold] (next) {
+                            \textcolor{PrimaryGold}{\textbf{\large Next}}\\
+                            \vspace{0.05cm}
+                            \begin{tabular}{c}
+                                Accelerator Program\\
+                                Pilots / Seed Round\\
+                                Scale Globally
+                            \end{tabular}
+                        };
+                        
+                    \end{tikzpicture}
+                \end{minipage}
+            };
+        \end{tikzpicture}
+        
+        \vspace{0.1cm}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGold, fill=GoldCard, rounded corners=6pt, inner sep=4pt, line width=1pt] {
+                \normalsize\textcolor{PrimaryGold}{Startup Program} \hspace{0.2cm}
+                \textcolor{PrimaryGold}{Building the Future of Commerce}
+            };
+        \end{tikzpicture}
+        
+        \vspace{0.05cm}
+    \end{center}
+\end{frame}

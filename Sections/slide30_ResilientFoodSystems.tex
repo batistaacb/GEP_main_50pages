@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 13: FOOD SECURITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=1cm]current page.center) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=0cm,yshift=1cm]current page.center) circle (3cm);
+        \fill[PrimaryGreenLighter, opacity=0.04] ([xshift=0cm,yshift=1cm]current page.center) circle (2cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How can better demand information help farmers?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            When farmers know what people are likely to buy, they can plan better, waste less, and produce with more confidence.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.5cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Resilient Food Systems}}
+        \vspace{0.1cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.2cm,
+            chain/.style={
+                draw=PrimaryBlue!40, 
+                rounded corners=6pt, 
+                minimum width=2.4cm, 
+                minimum height=2.4cm, 
+                align=center, 
+                fill=white, 
+                line width=1.2pt, 
+                font=\small\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            label/.style={
+                font=\tiny,
+                text=LightText
+            }
+        ]
+            \node[chain, fill=BlueCard, draw=PrimaryBlue] (d) {
+                Demand\\
+                \footnotesize Intelligence\\
+                \vspace{0.05cm}
+                \label{What consumers want}
+            };
+            
+            \node[chain, right=0.2cm of d, fill=BlueCard, draw=PrimaryBlue] (p) {
+                Better\\
+                \footnotesize Planning\\
+                \vspace{0.05cm}
+                \label{Farmer confidence}
+            };
+            
+            \node[chain, right=0.2cm of p, fill=BlueCard, draw=PrimaryBlue] (w) {
+                Less\\
+                \footnotesize Waste\\
+                \vspace{0.05cm}
+                \label{CSA pre-sales}
+            };
+            
+            \node[chain, right=0.2cm of w, fill=GreenCard, draw=PrimaryGreen] (s) {
+                Food\\
+                \footnotesize Security\\
+                \vspace{0.05cm}
+                \label{Quality of life}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=6pt, minimum width=11.0cm, minimum height=0.9cm, align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{Food Intelligence gives the farmer \textbf{predictability}}
+                \\[0.05cm]
+                \textcolor{BodyText}{through CSA pre-sales, enabling better planning}
+            };
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.5cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, minimum width=11.0cm, minimum height=0.5cm, align=center, line width=1pt, font=\large] {
+                \textcolor{PrimaryGreen}{\textbf{Food Security Supports Better Lives for Farmers}}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

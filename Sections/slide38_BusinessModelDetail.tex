@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 20: BUSINESS MODEL — DETAILED VIEW
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How will eBezout make money?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We start with subscriptions and transaction fees from retailers. As the platform grows, we can add AI-powered services and new revenue streams around the intelligence we create.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Revenue Model: Detailed View}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            box/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=3.2cm,
+                minimum height=2.8cm,
+                align=center,
+                fill=white,
+                line width=0.8pt,
+                font=\footnotesize
+            }
+        ]
+            \node[box, fill=BlueCard, draw=PrimaryBlue] (now) {
+                \textcolor{PrimaryBlue}{\textbf{Now — MVP}}
+                \\[0.1cm]
+                \textcolor{BodyText}{SaaS Platform}
+                \\[0.05cm]
+                \textcolor{BodyText}{Subscription Fees}
+                \\[0.1cm]
+                \textcolor{BodyText}{Business Intelligence}
+                \\[0.1cm]
+                \textcolor{BodyText}{Transaction Fees}
+                \\[0.1cm]
+                \textcolor{LightText}{\tiny Pre-revenue}
+                \\[0.05cm]
+                \textcolor{LightText}{\tiny Validating model}
+            };
+            
+            \node[box, right=0.12cm of now, fill=GreenCard, draw=PrimaryGreen] (near) {
+                \textcolor{PrimaryGreen}{\textbf{Near — Scale}}
+                \\[0.1cm]
+                \textcolor{BodyText}{AI Cross-Selling}
+                \\[0.05cm]
+                \textcolor{BodyText}{Commissions}
+                \\[0.1cm]
+                \textcolor{BodyText}{Personalized}
+                \\[0.05cm]
+                \textcolor{BodyText}{Promotions}
+                \\[0.1cm]
+                \textcolor{LightText}{\tiny Building repeatable}
+                \\[0.05cm]
+                \textcolor{LightText}{\tiny commercial model}
+            };
+            
+            \node[box, right=0.12cm of near, fill=GoldCard, draw=PrimaryGold] (future) {
+                \textcolor{PrimaryGold}{\textbf{Future — Ecosystem}}
+                \\[0.1cm]
+                \textcolor{BodyText}{FinTech}
+                \\[0.05cm]
+                \textcolor{BodyText}{Credit}
+                \\[0.1cm]
+                \textcolor{BodyText}{Prepaid Perishables}
+                \\[0.05cm]
+                \textcolor{BodyText}{Data Insights}
+                \\[0.1cm]
+                \textcolor{LightText}{\tiny High-margin}
+                \\[0.05cm]
+                \textcolor{LightText}{\tiny Ecosystem play}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=BlueCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryBlue}{Current Revenue: \$0 — Focused on validation and building a repeatable model}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FOUNDER STORY — Slide F6: Why eBezout?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \fill[PrimaryGreenLighter, opacity=0.04] ([xshift=0cm,yshift=0cm]current page.center) circle (2.8cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why did we build eBezout this way?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                Because the technology people need to use is already in their hands. We just needed to connect it to physical retail.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Why eBezout?}}
+        \vspace{0.1cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.2cm,
+            box/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=8pt,
+                minimum width=2.8cm,
+                minimum height=2.8cm,
+                align=center,
+                fill=white,
+                line width=1.2pt,
+                font=\large\bfseries,
+                inner sep=8pt,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[box, fill=BlueCard, draw=PrimaryBlue] (tech) {
+                \textcolor{PrimaryBlue}{Technology}
+                \\[0.15cm]
+                \normalsize\textcolor{BodyText}{Smartphone}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{QR Code}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Messaging}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{AI}
+            };
+            
+            \node[box, right=0.2cm of tech, fill=GreenCard, draw=PrimaryGreen] (retail) {
+                \textcolor{PrimaryGreen}{Retail}
+                \\[0.15cm]
+                \normalsize\textcolor{BodyText}{Physical stores}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Supermarkets}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Shopping experience}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Customer interaction}
+            };
+            
+            \node[box, right=0.2cm of retail, fill=GoldCard, draw=PrimaryGold] (food) {
+                \textcolor{PrimaryGold}{Food}
+                \\[0.15cm]
+                \normalsize\textcolor{BodyText}{Producers}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Food security}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Supply chains}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Sustainability}
+            };
+            
+            \node[box, right=0.2cm of food, fill=PrimaryBlue!10, draw=PrimaryBlue] (ai) {
+                \textcolor{PrimaryBlue}{AI}
+                \\[0.15cm]
+                \normalsize\textcolor{BodyText}{Intelligence}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Data}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Insights}
+                \\[0.05cm]
+                \normalsize\textcolor{BodyText}{Prediction}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=6pt, 
+                  minimum width=11.5cm, minimum height=0.7cm, 
+                  align=center, line width=1.2pt, font=\large\bfseries] {
+                \textcolor{PrimaryGreen}{The convergence of food, retail, technology, and AI}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

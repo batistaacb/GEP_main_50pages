@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 21: COMPETITIVE LANDSCAPE
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.1] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.08] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Why would a retailer choose eBezout over other solutions?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We make the shopping experience simpler, while helping retailers learn from customer interactions—not just completed purchases.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Competitive Landscape}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            compbox/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=6pt,
+                minimum width=4.8cm,
+                minimum height=3.0cm,
+                align=center,
+                fill=white,
+                line width=1pt,
+                inner sep=4pt,
+                font=\tiny,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            }
+        ]
+            \node[compbox, draw=PrimaryRed, fill=RedCard] (direct) {
+                \textcolor{PrimaryRed}{\textbf{Direct Competitors}}
+                \\[0.1cm]
+                \textcolor{BodyText}{VipCommerce}
+                \\[0.05cm]
+                \textcolor{BodyText}{App-based Scan \& Go}
+                \\[0.1cm]
+                \textcolor{BodyText}{\textbf{Limitations:}}
+                \\[0.05cm]
+                \textcolor{BodyText}{High friction — require new app}
+                \\[0.05cm]
+                \textcolor{BodyText}{Hardware requirements}
+                \\[0.05cm]
+                \textcolor{BodyText}{Transaction-only data}
+            };
+            
+            \node[compbox, right=0.2cm of direct, draw=PrimaryGold, fill=GoldCard] (indirect) {
+                \textcolor{PrimaryGold}{\textbf{Indirect Competitors}}
+                \\[0.1cm]
+                \textcolor{BodyText}{iFood, Uber Eats}
+                \\[0.05cm]
+                \textcolor{BodyText}{Amazon, Walmart}
+                \\[0.1cm]
+                \textcolor{BodyText}{\textbf{Limitations:}}
+                \\[0.05cm]
+                \textcolor{BodyText}{Delivery-focused}
+                \\[0.05cm]
+                \textcolor{BodyText}{Medium friction}
+                \\[0.05cm]
+                \textcolor{BodyText}{Transaction-only data}
+            };
+            
+            \node[compbox, right=0.2cm of indirect, draw=PrimaryGreen, fill=GreenCard] (ebezout) {
+                \textcolor{PrimaryGreen}{\textbf{eBezout AI}}
+                \\[0.1cm]
+                \textcolor{BodyText}{QR + Messaging + AI}
+                \\[0.1cm]
+                \textcolor{BodyText}{\textbf{Advantages:}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\textcolor{PrimaryGreen}{Lowest friction — no app}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\textcolor{PrimaryGreen}{Captures intent}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\textcolor{PrimaryGreen}{Product as channel}}
+                \\[0.05cm]
+                \textcolor{BodyText}{\textcolor{PrimaryGreen}{Behavioral data moat}}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{Competing on friction, intelligence, and data}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

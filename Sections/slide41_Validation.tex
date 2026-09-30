@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 23: VALIDATION & TRACTION
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=0cm,yshift=0cm]current page.center) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=0cm,yshift=0cm]current page.center) circle (3cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What have we proven so far?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+                We have built the MVP, protected the IP, tested the concept with retail professionals, and are now using a PoC to learn and improve the product.
+            };
+    \end{tikzpicture}
+
+    \vspace{0.3cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Validation \& Traction}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.12cm,
+            valid/.style={
+                draw=PrimaryBlue!30,
+                rounded corners=4pt,
+                minimum width=8.0cm,
+                minimum height=0.6cm,
+                align=left,
+                fill=white,
+                line width=0.8pt,
+                font=\footnotesize,
+                inner sep=4pt
+            }
+        ]
+            \node[valid, fill=GreenCard, draw=PrimaryGreen] (v1) {
+                \textcolor{PrimaryGreen}{\textbf{$\checkmark$}} \textcolor{BodyText}{MVP with PoC — The core Scan \& Go flow works}
+            };
+            \node[valid, below=0.12cm of v1, fill=BlueCard, draw=PrimaryBlue] (v2) {
+                \textcolor{PrimaryBlue}{\textbf{$\checkmark$}} \textcolor{BodyText}{Bootstrapped \& Lean — Capital-efficient operations}
+            };
+            \node[valid, below=0.12cm of v2, fill=GoldCard, draw=PrimaryGold] (v3) {
+                \textcolor{PrimaryGold}{\textbf{$\checkmark$}} \textcolor{BodyText}{Patent Pending — Protected intellectual property}
+            };
+            \node[valid, below=0.12cm of v3, fill=GreenCard, draw=PrimaryGreen] (v4) {
+                \textcolor{PrimaryGreen}{\textbf{$\checkmark$}} \textcolor{BodyText}{Positive Retail Feedback — Supermarket professionals validate the concept}
+            };
+            \node[valid, below=0.12cm of v4, fill=BlueCard, draw=PrimaryBlue] (v5) {
+                \textcolor{PrimaryBlue}{\textbf{$\checkmark$}} \textcolor{BodyText}{Pilot Opportunity — A concrete path to real-world validation}
+            };
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{Pre-revenue — Focused on validation and learning}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

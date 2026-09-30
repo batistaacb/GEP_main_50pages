@@ -1,0 +1,85 @@
+% ==========================================================
+% SLIDE 50D: The QR Code Breakthrough (Visual Centerpiece)
+% ==========================================================
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {What changes with eBezout?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            Instead of several steps across different apps, one QR Code starts the conversation between the customer and the store.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.4cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{One Scan Starts the Conversation}}
+        \vspace{0.2cm}
+    \end{center}
+    
+    \vspace{-0.2cm}
+    \begin{columns}[T]
+        \begin{column}{0.45\textwidth}
+            \centering
+            \textbf{\textcolor{PrimaryRed}{Old Journey}} \\
+            \vspace{0.2cm}
+            \begin{tikzpicture}[
+                node distance=0.05cm,
+                old/.style={
+                    draw=PrimaryRed!10,
+                    rounded corners=3pt,
+                    minimum width=4.5cm,
+                    minimum height=0.6cm,
+                    align=center,
+                    fill=white,
+                    line width=0.5pt,
+                    font=\small
+                }
+            ]
+                \node[old] (b) {Barcode visible on the product};
+                \node[old, below=0.1cm of b] (r) {Open a barcode reader app};
+                \node[old, below=0.1cm of r] (c) {Scan, select, and copy the code};
+                \node[old, below=0.1cm of c] (w) {Switch to another app: WhatsApp};
+                \node[old, below=0.1cm of w] (s) {Find or start the retailer's chat};
+                \node[old, below=0.1cm of s] (m) {Paste and send the code};
+                
+                \draw[-{Latex[length=1mm]}, line width=1pt, PrimaryRed] (b.south) -- (r.north);
+                \draw[-{Latex[length=1mm]}, line width=1pt, PrimaryRed] (r.south) -- (c.north);
+                \draw[-{Latex[length=1mm]}, line width=1pt, PrimaryRed] (c.south) -- (w.north);
+                \draw[-{Latex[length=1mm]}, line width=1pt, PrimaryRed] (w.south) -- (s.north);
+                \draw[-{Latex[length=1mm]}, line width=1pt, PrimaryRed] (s.south) -- (m.north);
+            \end{tikzpicture}
+        \end{column}
+        
+        \begin{tikzpicture}[remember picture, overlay]
+            \node at ([xshift=0cm,yshift=0cm]current page.center) {
+                \Huge\textbf{\textcolor{PrimaryBlue}{$\rightarrow$}}
+            };
+        \end{tikzpicture}
+        
+        \begin{column}{0.45\textwidth}
+            \centering
+            \textbf{\textcolor{PrimaryGreen}{New Journey}} \\
+            \vspace{0.1cm}
+            
+            \begin{minipage}{4.5cm}
+                \centering
+                \includegraphics[width=3.8cm, keepaspectratio]{Images/eBezoutAI_QR_7898367983790.png} 
+            \end{minipage}
+
+        \end{column}
+    \end{columns}
+
+    \vspace{-0.3cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryBlue, fill=GoldCard, rounded corners=4pt, 
+                  minimum width=11.5cm, minimum height=0.7cm, 
+                  align=center, line width=0.5pt, font=\small] {
+                \textcolor{PrimaryBlue}{\textbf{The Bigger Realization:} Retail Intelligence $\rightarrow$ Demand Forecasting $\rightarrow$ Food Intelligence $\rightarrow$ CSA}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

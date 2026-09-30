@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 19: TECHNOLOGY ARCHITECTURE
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGoldLight, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {How does all the technology work together?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            The customer uses a smartphone to interact with the store, the AI understands the conversation, and the data layer keeps the product and customer information organized.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Architecture Overview}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            node distance=0.15cm,
+            layer/.style={
+                draw=PrimaryBlue!40,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=white,
+                line width=1pt,
+                font=\footnotesize\bfseries
+            },
+            layerblue/.style={
+                draw=PrimaryBlue,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=BlueCard,
+                line width=1.5pt,
+                font=\footnotesize\bfseries
+            },
+            layergreen/.style={
+                draw=PrimaryGreen,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=GreenCard,
+                line width=1.5pt,
+                font=\footnotesize\bfseries
+            },
+            layergold/.style={
+                draw=PrimaryGold,
+                rounded corners=4pt,
+                minimum width=2.6cm,
+                minimum height=1.2cm,
+                align=center,
+                fill=GoldCard,
+                line width=1.5pt,
+                font=\footnotesize\bfseries
+            }
+        ]
+            % Row 1: User Layer
+            \node[layerblue] (user) {User Layer};
+            \node[layer, right=0.15cm of user] (smartphone) {Smartphone};
+            \node[layer, right=0.15cm of smartphone] (camera) {Camera};
+            \node[layer, right=0.15cm of camera] (messaging) {Messaging App};
+            
+            % Row 2: Interaction Layer
+            \node[layergreen, below=0.15cm of user] (interaction) {Interaction Layer};
+            \node[layer, below=0.15cm of smartphone] (qr) {QR Scanner};
+            \node[layer, below=0.15cm of camera] (api) {Messaging API};
+            \node[layer, below=0.15cm of messaging] (webhook) {Webhooks};
+            
+            % Row 3: Intelligence Layer
+            \node[layergold, below=0.15cm of interaction] (intelligence) {Intelligence Layer};
+            \node[layer, below=0.15cm of qr] (agent) {AI Agent};
+            \node[layer, below=0.15cm of api] (llm) {LLM};
+            \node[layer, below=0.15cm of webhook] (context) {Context Engine};
+            
+            % Row 4: Data Layer
+            \node[layerblue, below=0.15cm of intelligence] (data) {Data Layer};
+            \node[layer, below=0.15cm of agent] (productdb) {Product DB};
+            \node[layer, below=0.15cm of llm] (behaviordb) {Behavioral DB};
+            \node[layer, below=0.15cm of context] (analytics) {Analytics};
+            
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{-0.50cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.5cm, minimum height=0.5cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{Lightweight, scalable, and built for rapid deployment}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}

@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SLIDE 17: MARKET EXPANSION PATH
+%% INVESTOR DEEP DIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[PrimaryBlueLighter, opacity=0.08] ([xshift=-3cm,yshift=2cm]current page.south east) circle (4cm);
+        \fill[PrimaryGreenLighter, opacity=0.06] ([xshift=4cm,yshift=-2cm]current page.north west) circle (3.5cm);
+        \node[anchor=north west, text=FundoQuestion, font=\bfseries\tamanhoQuestion\selectfont]
+            at ([xshift=0.8cm,yshift=-0.8cm]current page.north west) {Where can eBezout go after supermarkets?};
+        \node[anchor=north west, text width=.80\paperwidth, align=left, text=FundoKeyMessage, font=\tamanhoKeyMessage\selectfont]
+            at ([xshift=0.8cm,yshift=-1.6cm]current page.north west) {
+            We start with supermarkets, expand the platform across phygital retail, and eventually connect the intelligence to the wider food system.
+        };
+    \end{tikzpicture}
+
+    \vspace{0.2cm}
+    \begin{center}
+        {\Huge\bfseries\textcolor{PrimaryBlue}{Market Expansion Path}}
+        \vspace{0.05cm}
+    \end{center}
+
+    \vspace{0.1cm}
+    \begin{center}
+        \begin{tikzpicture}[
+            roadbox/.style={
+                draw=PrimaryBlue,
+                fill=BlueCard,
+                rounded corners=4pt,
+                minimum width=2.8cm,
+                minimum height=0.6cm,
+                align=center,
+                line width=1pt,
+                font=\footnotesize\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            roadboxgreen/.style={
+                draw=PrimaryGreen,
+                fill=GreenCard,
+                rounded corners=4pt,
+                minimum width=2.8cm,
+                minimum height=0.6cm,
+                align=center,
+                line width=1pt,
+                font=\footnotesize\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            roadboxgold/.style={
+                draw=PrimaryGold,
+                fill=GoldCard,
+                rounded corners=4pt,
+                minimum width=2.8cm,
+                minimum height=0.6cm,
+                align=center,
+                line width=1pt,
+                font=\footnotesize\bfseries,
+                drop shadow={shadow xshift=1pt, shadow yshift=-1pt, fill=ShadowColor}
+            },
+            subtitle/.style={
+                font=\tiny,
+                text=BodyText
+            }
+        ]
+            \node[font=\bfseries\small, text=PrimaryBlue] at (0,0.8) {Market Expansion};
+            
+            \node[roadbox] (s1) at (-3.2,0) {Supermarkets};
+            \node[subtitle, below=0.05cm of s1] {Initial Beachhead};
+            
+            \node[roadboxgreen] (s2) at (0,0) {Phygital Shopping};
+            \node[subtitle, below=0.05cm of s2] {Platform Expansion};
+            
+            \node[roadboxgold] (s3) at (3.2,0) {Food Systems};
+            \node[subtitle, below=0.05cm of s3] {Long-term Vision};
+            
+            
+        \end{tikzpicture}
+    \end{center}
+
+    \vspace{0.05cm}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[draw=PrimaryGreen!50, fill=GreenCard, rounded corners=4pt, 
+                  minimum width=10.0cm, minimum height=0.6cm, 
+                  align=center, line width=1pt, font=\small] {
+                \textcolor{PrimaryGreen}{From supermarkets to the entire food ecosystem}
+            };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
